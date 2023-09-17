@@ -354,10 +354,10 @@
 -analyzer:"D:/Editor/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Editor/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Camera1.cs"
+"Assets/Scripts/DialogueChoice.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
-"Assets/Scripts/TagDialogueOption.cs"
 -langversion:9.0
 
 /deterministic
