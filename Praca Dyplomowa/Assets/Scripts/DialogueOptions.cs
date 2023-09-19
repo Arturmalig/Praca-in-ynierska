@@ -30,26 +30,34 @@ public class DialogueOptions : MonoBehaviour
 
     };
 
-    public bool[] DialReturn(Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
+    public bool[] DialReturn(GameObject tekst, Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
     {
-        if (tag == "blood")
+        if (tag == "blood") // Wprowadzanie linii dialogowych i opcji na przyciskach dla krwii
         {
+            // Linia dialogowa
+            tekst.GetComponent<TMP_Text>().text = "Dotknales krwi lol";
+            //Opcje na przyciskach
             op1.GetComponentInChildren<TMP_Text>().text = bloodOp[0].text;
             op2.GetComponentInChildren<TMP_Text>().text = bloodOp[1].text;
             op3.GetComponentInChildren<TMP_Text>().text = bloodOp[2].text;
             op4.GetComponentInChildren<TMP_Text>().text = bloodOp[3].text;
+            // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
             bool[] tab1 = new bool[]
             {
                 bloodOp[0].value, bloodOp[1].value, bloodOp[2].value, bloodOp[3].value
             };
             return tab1;
         }
-        if (tag == "knife")
+        if (tag == "knife") // Wprowadzanie linii dialogowych i opcji na przyciskach dla no¿a
         {
+            // Linia dialogowa
+            tekst.GetComponent<TMP_Text>().text = "Dotknales noza hehe";
+            //Opcje na przyciskach
             op1.GetComponentInChildren<TMP_Text>().text = knifeOp[0].text;
             op2.GetComponentInChildren<TMP_Text>().text = knifeOp[1].text;
             op3.GetComponentInChildren<TMP_Text>().text = knifeOp[2].text;
             op4.GetComponentInChildren<TMP_Text>().text = knifeOp[3].text;
+            // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
             bool[] tab2 = new bool[]
 {
                  knifeOp[0].value,  knifeOp[1].value,  knifeOp[2].value,  knifeOp[3].value

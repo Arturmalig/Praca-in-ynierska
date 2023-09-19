@@ -993,6 +993,7 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   maxClickDistance: 10
   Panel: {fileID: 1137672173}
+  Tekst: {fileID: 17873174}
   Option1: {fileID: 727944205}
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
@@ -1530,6 +1531,7 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   maxClickDistance: 10
   Panel: {fileID: 1137672173}
+  Tekst: {fileID: 17873174}
   Option1: {fileID: 727944205}
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
@@ -2875,5 +2877,5 @@ SceneRoots:
   - {fileID: 289686147}
   - {fileID: 836465569}
   - {fileID: 1584002469}
-  - {fileID: 1544906479}
   - {fileID: 1137672177}
+  - {fileID: 1544906479}
