@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -17,9 +18,10 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option2;// Przycisk 2 na canvas
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
-    private bool choice = false;// NIE JESTEM PEWIEN JESZCZE TEGO ELEMENTU, MOZE BOOLE ZALATWIA JEGO ZADANIE
+    private int choice = 99;// NIE JESTEM PEWIEN JESZCZE TEGO ELEMENTU, MOZE BOOLE ZALATWIA JEGO ZADANIE
     private string objectTag;//Tag obiektu, ktory kliknelismy
-    private bool[] tab = new bool[] { }; // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
+    private int[] tab = new int[] { }; // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
+    public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
 
 
     private void Start()
@@ -29,6 +31,7 @@ public class ObjectClickEvent : DialogueOptions
         Option2.onClick.AddListener(ChoiceOption2);
         Option3.onClick.AddListener(ChoiceOption3);
         Option4.onClick.AddListener(ChoiceOption4);
+        control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
         // na starcie wylaczenie canvasa
         Panel.SetActive(false);
         
@@ -52,33 +55,36 @@ public class ObjectClickEvent : DialogueOptions
                     Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
                 }
             }
-            else Debug.Log("Too far to click"); // TO ZAPEWNE DO USUNIECIA, SLUZY DO SPRAWDZANIA ODLEGLOSCI Z JAKIEJ DA SIE KLIKNAC
         }
     }
 
 
     public void ChoiceOption1() // akcja po wcisnieciu 1 guzika
     {
-        choice = tab[0]; // Tu wywala dziwny blad we wszystkich, ustalic ocb
-        DialogueClosing(Panel);
-        Debug.Log(choice);
+        choice = tab[0]; // <- jak sie kliknie na kulke to nie pobiera wartosci, nwm czemu, u wszystkich opcji
+        DialogueClosing(Panel); // Funkcja w DialogueOptions
+        AddingValue(choice, control);// Funkcja w DialogueOptions
+        
     }
     public void ChoiceOption2() // akcja po wcisnieciu 2 guzika
     {
         choice = tab[1];
         DialogueClosing(Panel);
-        Debug.Log(choice);
+        AddingValue(choice, control);
+        
     }
     public void ChoiceOption3()// akcja po wcisnieciu 3 guzika
     {
         choice = tab[2];
         DialogueClosing(Panel);
-        Debug.Log(choice);
+        AddingValue(choice, control);
+        
     }
     public void ChoiceOption4()// akcja po wcisnieciu 4 guzika
     {
         choice = tab[3];
         DialogueClosing(Panel);
-        Debug.Log(choice);
+        AddingValue(choice, control);
+        
     }
 }
