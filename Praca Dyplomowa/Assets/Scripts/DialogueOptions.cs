@@ -30,8 +30,9 @@ public class DialogueOptions : MonoBehaviour
 
     };
 
-    public int[] DialReturn(GameObject tekst, Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
+    public List<int> DialReturn(GameObject tekst, Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
     {
+        List<int> tab = new List<int>();
         if (tag == "blood") // Wprowadzanie linii dialogowych i opcji na przyciskach dla krwii
         {
             // Linia dialogowa
@@ -42,11 +43,10 @@ public class DialogueOptions : MonoBehaviour
             op3.GetComponentInChildren<TMP_Text>().text = bloodOp[2].text;
             op4.GetComponentInChildren<TMP_Text>().text = bloodOp[3].text;
             // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
-            int[] tab1 = new int[]
-            {
-                bloodOp[0].value, bloodOp[1].value, bloodOp[2].value, bloodOp[3].value
-            };
-            return tab1;
+            tab.Add(bloodOp[0].value);
+            tab.Add(bloodOp[1].value);
+            tab.Add(bloodOp[2].value);
+            tab.Add(bloodOp[3].value);
         }
         if (tag == "knife") // Wprowadzanie linii dialogowych i opcji na przyciskach dla no¿a
         {
@@ -58,15 +58,12 @@ public class DialogueOptions : MonoBehaviour
             op3.GetComponentInChildren<TMP_Text>().text = knifeOp[2].text;
             op4.GetComponentInChildren<TMP_Text>().text = knifeOp[3].text;
             // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
-            int[] tab2 = new int[]
-            {
-                 knifeOp[0].value,  knifeOp[1].value,  knifeOp[2].value,  knifeOp[3].value
-                 
-            };
-
-            return tab2;
+            tab.Add(knifeOp[0].value);
+            tab.Add(knifeOp[1].value);
+            tab.Add(knifeOp[2].value);
+            tab.Add(knifeOp[3].value);
         }
-        else return null;
+        return tab;
     }
 
     public void DialogueClosing(GameObject Panel) // Zamykanie okna dialogowego - zabieg estetyczny, zeby w ObjectClickEvent nie powtarzac 4 razy tych samych linijek
@@ -76,7 +73,7 @@ public class DialogueOptions : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void AddingValue(int choice, GameControl gc)
+    public void AddingValue(int choice, GameControl gc) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o%%%
     {
         if (choice == 1)
         {

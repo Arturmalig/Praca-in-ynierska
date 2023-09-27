@@ -18,9 +18,8 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option2;// Przycisk 2 na canvas
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
-    private int choice = 99;// NIE JESTEM PEWIEN JESZCZE TEGO ELEMENTU, MOZE BOOLE ZALATWIA JEGO ZADANIE
     private string objectTag;//Tag obiektu, ktory kliknelismy
-    private int[] tab = new int[] { }; // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
+    private List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
     public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
 
 
@@ -39,6 +38,7 @@ public class ObjectClickEvent : DialogueOptions
 
     private void Update()
     {
+        Cursor.visible = true;
         if (Input.GetMouseButtonDown(0))
         {
             
@@ -58,33 +58,34 @@ public class ObjectClickEvent : DialogueOptions
         }
     }
 
-
+    /// <summary>
+    ///  NIE DZIA£A KLIKANIE NA JEDEN Z OBIEKTÓW (TEN PRAWY CUBE(1)) I DODAWANIE WARTOŒCI TE¯ NIE DZIA£A
+    /// </summary>
     public void ChoiceOption1() // akcja po wcisnieciu 1 guzika
     {
-        choice = tab[0]; // <- jak sie kliknie na kulke to nie pobiera wartosci, nwm czemu, u wszystkich opcji
+        AddingValue(tab[0], control);// Funkcja w DialogueOptions, raz powiêksza wartoœæ o 1, raz o 4 :))))
         DialogueClosing(Panel); // Funkcja w DialogueOptions
-        AddingValue(choice, control);// Funkcja w DialogueOptions
+        tab.Clear();
         
     }
     public void ChoiceOption2() // akcja po wcisnieciu 2 guzika
     {
-        choice = tab[1];
+        AddingValue(tab[1], control);
         DialogueClosing(Panel);
-        AddingValue(choice, control);
-        
+        tab.Clear();
     }
     public void ChoiceOption3()// akcja po wcisnieciu 3 guzika
     {
-        choice = tab[2];
+
+        AddingValue(tab[2], control);
         DialogueClosing(Panel);
-        AddingValue(choice, control);
-        
+        tab.Clear();
     }
     public void ChoiceOption4()// akcja po wcisnieciu 4 guzika
     {
-        choice = tab[3];
+
+        AddingValue(tab[3], control);
         DialogueClosing(Panel);
-        AddingValue(choice, control);
-        
+        tab.Clear();
     }
 }
