@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 97
+  controlID: 52
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 53
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 44
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Furniture_ges1/tv
+    - Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -329,30 +329,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Furniture_ges1/tv
+  - Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\artur\Praca-dyplomowa\Praca Dyplomowa
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 319}
-    m_SelectedIDs: 46300100
-    m_LastClickedID: 77894
-    m_ExpandedIDs: 0000000022610000286100002a610000546100005a61000072610000a4750000463001004830010046060200
+    scrollPos: {x: 0, y: 207}
+    m_SelectedIDs: 92c60000
+    m_LastClickedID: 50834
+    m_ExpandedIDs: 00000000286e00002a6e00002c6e00002e6e0000346e0000366e00008a6e0000966e00002c85000094c60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Dining_Chair
-      m_OriginalName: Dining_Chair
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 128932
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -366,7 +366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000226100002461000026610000286100002a610000
+    m_ExpandedIDs: 00000000286e00002a6e00002c6e00002e6e0000306e0000326e0000346e0000366e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,24 +505,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 265.2}
-      m_SelectedIDs: 4820fdff
-      m_LastClickedID: -188344
-      m_ExpandedIDs: 220dfdff9822fdff9624fdff363cfdff9e5cfdffa89cfdff02a0fdff9aa0fdfffaa1fdffdaaafdff48acfdff50c6fdff041afeffb01dfeff901ffeffccb0feff9243ffffd643ffff50a7ffff42c6ffff32c7ffff7acbffff6ad0ffff0cdafffffadaffff74e2ffff34e4ffff54ebfffffaebffffacefffff3af5ffffacfaffff30fbffff3a5e0000e2610000266e00007c6f0000427100009c72000046740000fa91000006b40000ee060200fc060200a0170200ae170200e0170200b61c0200c41c0200f21c0200542202006a2502007c25020044260200
+      scrollPos: {x: 0, y: 128}
+      m_SelectedIDs: 0ec30000
+      m_LastClickedID: 49934
+      m_ExpandedIDs: 8667ffff2e6fffff306fffff326fffffb6c5ffff84dcffff46dfffffe2e1ffff30fbffff7e5f0000905f0000606000007a8b0000e08e000030910000909500006ea20000d8c3000084c4000096c40000f2c40000f6c400006ac50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Entry
-        m_OriginalName: Entry
+        m_Name: Cube (21)
+        m_OriginalName: Cube (21)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 140668
+        m_UserData: 50594
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 4
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 17.751184, y: -1.5710856, z: 7.0725346}
+    m_Target: {x: 14.650315, y: 3.755596, z: -11.028315}
     speed: 2
-    m_Value: {x: 17.751184, y: -1.5710856, z: 7.0725346}
+    m_Value: {x: 14.650316, y: 3.755596, z: -11.028316}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -910,13 +910,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.039486855, y: -0.788409, z: 0.046809994, w: -0.61291677}
+    m_Target: {x: -0.0076091303, y: 0.95910376, z: -0.024664951, w: -0.2838249}
     speed: 2
-    m_Value: {x: -0.04045663, y: -0.7870219, z: 0.047908694, w: -0.61373}
+    m_Value: {x: -0.007567952, y: 0.9589997, z: -0.02466274, w: -0.28223032}
   m_Size:
-    m_Target: 11.351184
+    m_Target: 6.488981
     speed: 2
-    m_Value: 11.351183
+    m_Value: 6.48898
   m_Ortho:
     m_Target: 0
     speed: 2
