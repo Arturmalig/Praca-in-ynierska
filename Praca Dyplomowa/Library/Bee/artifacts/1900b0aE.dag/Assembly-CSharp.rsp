@@ -373,10 +373,13 @@
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs"
 "Assets/Scripts/Camera1.cs"
 "Assets/Scripts/DialogueOptions.cs"
+"Assets/Scripts/EscapeScript.cs"
 "Assets/Scripts/GameControl.cs"
+"Assets/Scripts/MenuScript.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
+"Assets/Scripts/SelectScript.cs"
 -langversion:9.0
 
 /deterministic

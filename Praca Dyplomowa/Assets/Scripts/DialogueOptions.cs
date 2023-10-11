@@ -47,6 +47,7 @@ public class DialogueOptions : MonoBehaviour
             tab.Add(bloodOp[1].value);
             tab.Add(bloodOp[2].value);
             tab.Add(bloodOp[3].value);
+            return tab;
         }
         if (tag == "knife") // Wprowadzanie linii dialogowych i opcji na przyciskach dla no¿a
         {
@@ -62,36 +63,36 @@ public class DialogueOptions : MonoBehaviour
             tab.Add(knifeOp[1].value);
             tab.Add(knifeOp[2].value);
             tab.Add(knifeOp[3].value);
+            return tab;
         }
         return tab;
     }
 
     public void DialogueClosing(GameObject Panel) // Zamykanie okna dialogowego - zabieg estetyczny, zeby w ObjectClickEvent nie powtarzac 4 razy tych samych linijek
     {
-        Panel.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    public void AddingValue(int choice, GameControl gc) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o%%%
+    public void AddingValue(int choice, GameControl gc) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
     {
         if (choice == 1)
         {
-            gc.value++; //dodaje wartoœæ 4 razy???
-            Debug.Log(gc.value);
+            gc.value++; 
+            Debug.Log("Dobre: " + gc.value);
         }
         if(choice == 2)
         {
-            Debug.Log(gc.value);
+            Debug.Log("Dobre: " + gc.value);
         }
         if (choice == 3)
         {
-            Debug.Log(gc.value);
-            
+            Debug.Log("Dobre: " + gc.value);
+
         }
         if (choice == 4)
         {
-            Debug.Log(gc.value);
+            Debug.Log("Dobre: " + gc.value);
         }
     }
 }
