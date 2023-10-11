@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class EscapeScript : MonoBehaviour
 {
 
+    public void Resume()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     public void Back()
     {
