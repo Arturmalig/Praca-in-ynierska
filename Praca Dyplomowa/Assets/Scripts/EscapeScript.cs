@@ -8,6 +8,7 @@ public class EscapeScript : MonoBehaviour
 
     public void Resume()
     {
+        Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
     }
 

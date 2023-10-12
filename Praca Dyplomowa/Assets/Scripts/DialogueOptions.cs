@@ -15,18 +15,18 @@ public class DialogueOptions : MonoBehaviour
     public OptionChoice[] bloodOp = new OptionChoice[] // tablica zawierajaca opcje na buttony kiedy klikniemy na krew
     {
         new OptionChoice { text = "Zbierz", value = 1},
-        new OptionChoice { text = "Poliz", value = 2},
-        new OptionChoice { text = "Pomaluj", value = 3},
-        new OptionChoice { text = "Pogryz", value = 4}
+        new OptionChoice { text = "Poliz", value = 0},
+        new OptionChoice { text = "Pomaluj", value = 0},
+        new OptionChoice { text = "OdejdŸ", value = 2}
 
     };
 
     public OptionChoice[] knifeOp = new OptionChoice[] // tablica zawierajaca opcje na buttony kiedy klikniemy na noz
     {
         new OptionChoice { text = "Zabezpiecz", value = 1},
-        new OptionChoice { text = "Dzgnij", value = 2},
-        new OptionChoice { text = "Pomachaj", value = 3},
-        new OptionChoice { text = "Rzuc", value = 4}
+        new OptionChoice { text = "Dzgnij", value = 0},
+        new OptionChoice { text = "Pomachaj", value = 0},
+        new OptionChoice { text = "OdejdŸ", value = 2}
 
     };
 
@@ -72,27 +72,26 @@ public class DialogueOptions : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Panel.SetActive(false);
     }
 
-    public void AddingValue(int choice, GameControl gc) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
+    public void AddingValue(int choice, GameControl gc, GameObject item) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
     {
+        if (choice == 0)
+        {
+            item.SetActive(false);
+            Debug.Log("Dobre: " + gc.value);
+        }
         if (choice == 1)
         {
             gc.value++; 
             Debug.Log("Dobre: " + gc.value);
+            item.SetActive(false);
         }
         if(choice == 2)
         {
             Debug.Log("Dobre: " + gc.value);
-        }
-        if (choice == 3)
-        {
-            Debug.Log("Dobre: " + gc.value);
-
-        }
-        if (choice == 4)
-        {
-            Debug.Log("Dobre: " + gc.value);
+            
         }
     }
 }

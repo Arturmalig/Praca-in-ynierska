@@ -12,10 +12,16 @@ public class GameControl : MonoBehaviour
 
     public GameObject Panel;// Canvas
 
+    public void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora
             Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
             Panel.SetActive(true);

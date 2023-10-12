@@ -19,15 +19,16 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
     private string objectTag;//Tag obiektu, ktory kliknelismy
-    private List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
+    public List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
     public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
+    private GameObject item;
 
 
     private void Start()
     {
         //dodanie akcji jaka ma sie wykonac po kliknieciu przycisku na canvasie
         control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
-        
+
     }
 
     private void Update()
@@ -43,6 +44,8 @@ public class ObjectClickEvent : DialogueOptions
                 if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0)) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
                 {
                     objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
+                    item = gameObject;
+                    Debug.Log(item);
                     tab = DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
                     
                     Cursor.visible = true; // wlaczamy widocznosc kursora
@@ -62,7 +65,7 @@ public class ObjectClickEvent : DialogueOptions
         {
             Debug.Log(c);
         }
-        AddingValue(tab[0], control);// Funkcja w DialogueOptions
+        AddingValue(tab[0], control, item);// Funkcja w DialogueOptions
         DialogueClosing(Panel); // Funkcja w DialogueOptions
         tab.Clear();
         
@@ -73,7 +76,7 @@ public class ObjectClickEvent : DialogueOptions
         {
             Debug.Log(c);
         }
-        AddingValue(tab[1], control);
+        AddingValue(tab[1], control, item);
         DialogueClosing(Panel);
         tab.Clear();
     }
@@ -83,7 +86,7 @@ public class ObjectClickEvent : DialogueOptions
         {
             Debug.Log(c);
         }
-        AddingValue(tab[2], control);
+        AddingValue(tab[2], control, item);
         DialogueClosing(Panel);
         tab.Clear();
     }
@@ -94,7 +97,7 @@ public class ObjectClickEvent : DialogueOptions
             Debug.Log(c);
         }
 
-        AddingValue(tab[3], control);
+        AddingValue(tab[3], control, item);
         DialogueClosing(Panel);
         tab.Clear();
     }
