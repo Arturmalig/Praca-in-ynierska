@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,10 +19,10 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option2;// Przycisk 2 na canvas
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
-    private string objectTag;//Tag obiektu, ktory kliknelismy
-    public List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
+    public static string objectTag;//Tag obiektu, ktory kliknelismy
+    public static List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
     public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
-    private GameObject item;
+    public static GameObject item;
 
 
     private void Start()
@@ -33,10 +34,10 @@ public class ObjectClickEvent : DialogueOptions
 
     private void Update()
     {
+        
         Cursor.visible = true;
         if (Input.GetMouseButtonDown(0))
         {
-            
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, maxClickDistance)) // sprawdzamy czy w dystansie 10 jednostek udalo nam sie w cos kliknac
@@ -45,60 +46,12 @@ public class ObjectClickEvent : DialogueOptions
                 {
                     objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
                     item = gameObject;
-                    Debug.Log(item);
-                    tab = DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
-                    
+                    DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
                     Cursor.visible = true; // wlaczamy widocznosc kursora
                     Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
                     Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
                 }
             }
         }
-    }
-
-    /// <summary>
-    ///  NIE DZIA£A KLIKANIE NA JEDEN Z OBIEKTÓW (TEN PRAWY CUBE(1))
-    /// </summary>
-    public void ChoiceOption1() // akcja po wcisnieciu 1 guzika
-    {
-        foreach (int c in tab)
-        {
-            Debug.Log(c);
-        }
-        AddingValue(tab[0], control, item);// Funkcja w DialogueOptions
-        DialogueClosing(Panel); // Funkcja w DialogueOptions
-        tab.Clear();
-        
-    }
-    public void ChoiceOption2() // akcja po wcisnieciu 2 guzika
-    {
-        foreach (int c in tab)
-        {
-            Debug.Log(c);
-        }
-        AddingValue(tab[1], control, item);
-        DialogueClosing(Panel);
-        tab.Clear();
-    }
-    public void ChoiceOption3()// akcja po wcisnieciu 3 guzika
-    {
-        foreach (int c in tab)
-        {
-            Debug.Log(c);
-        }
-        AddingValue(tab[2], control, item);
-        DialogueClosing(Panel);
-        tab.Clear();
-    }
-    public void ChoiceOption4()// akcja po wcisnieciu 4 guzika
-    {
-        foreach (int c in tab)
-        {
-            Debug.Log(c);
-        }
-
-        AddingValue(tab[3], control, item);
-        DialogueClosing(Panel);
-        tab.Clear();
     }
 }

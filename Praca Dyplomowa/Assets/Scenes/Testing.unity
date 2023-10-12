@@ -741,8 +741,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 977838965}
-        m_TargetAssemblyTypeName: ObjectClickEvent, Assembly-CSharp
+      - m_Target: {fileID: 346310526}
+        m_TargetAssemblyTypeName: ClueOptions, Assembly-CSharp
         m_MethodName: ChoiceOption4
         m_Mode: 1
         m_Arguments:
@@ -812,6 +812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346310525}
+  - component: {fileID: 346310526}
   m_Layer: 5
   m_Name: ClueClick
   m_TagString: Untagged
@@ -843,6 +844,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: -0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &346310526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346310524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a247a55299cdf40837cb935a736ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 963194227}
+  maxClickDistance: 10
+  Panel: {fileID: 346310524}
+  Tekst: {fileID: 17873174}
+  Option1: {fileID: 727944205}
+  Option2: {fileID: 1593656829}
+  Option3: {fileID: 539910416}
+  Option4: {fileID: 298814792}
+  control: {fileID: 1309257511}
 --- !u!1 &380254194
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +920,6 @@ MonoBehaviour:
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
-  tab: 
   control: {fileID: 0}
 --- !u!65 &380254197
 BoxCollider:
@@ -1054,8 +1075,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 977838965}
-        m_TargetAssemblyTypeName: ObjectClickEvent, Assembly-CSharp
+      - m_Target: {fileID: 346310526}
+        m_TargetAssemblyTypeName: ClueOptions, Assembly-CSharp
         m_MethodName: ChoiceOption3
         m_Mode: 1
         m_Arguments:
@@ -1308,8 +1329,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 977838965}
-        m_TargetAssemblyTypeName: ObjectClickEvent, Assembly-CSharp
+      - m_Target: {fileID: 346310526}
+        m_TargetAssemblyTypeName: ClueOptions, Assembly-CSharp
         m_MethodName: ChoiceOption1
         m_Mode: 1
         m_Arguments:
@@ -2042,7 +2063,6 @@ MonoBehaviour:
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
-  tab: 
   control: {fileID: 0}
 --- !u!1 &1106907813
 GameObject:
@@ -3052,8 +3072,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 977838964}
   - {fileID: 380254195}
+  - {fileID: 977838964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593656827
@@ -3139,8 +3159,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 977838965}
-        m_TargetAssemblyTypeName: ObjectClickEvent, Assembly-CSharp
+      - m_Target: {fileID: 346310526}
+        m_TargetAssemblyTypeName: ClueOptions, Assembly-CSharp
         m_MethodName: ChoiceOption2
         m_Mode: 1
         m_Arguments:

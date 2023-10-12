@@ -372,6 +372,7 @@
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow.cs"
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs"
 "Assets/Scripts/Camera1.cs"
+"Assets/Scripts/ClueOptions.cs"
 "Assets/Scripts/Counter.cs"
 "Assets/Scripts/DialogueOptions.cs"
 "Assets/Scripts/EscapeScript.cs"
