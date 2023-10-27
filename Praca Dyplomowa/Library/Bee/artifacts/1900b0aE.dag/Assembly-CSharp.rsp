@@ -379,6 +379,7 @@
 "Assets/Scripts/EscapeScript.cs"
 "Assets/Scripts/GameControl.cs"
 "Assets/Scripts/MenuScript.cs"
+"Assets/Scripts/MeshCombiner.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
