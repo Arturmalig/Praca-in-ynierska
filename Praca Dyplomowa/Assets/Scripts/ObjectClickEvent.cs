@@ -20,7 +20,6 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
     public static string objectTag;//Tag obiektu, ktory kliknelismy
-    public static List<int> tab = new List<int>(); // Tablica wartosci dla przyciskow, zwracana przez DialReturn. Sluzy do okreslania poprawnosci wybranej opcji
     public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
     public static GameObject item;
 
@@ -53,5 +52,6 @@ public class ObjectClickEvent : DialogueOptions
                 }
             }
         }
+        
     }
 }

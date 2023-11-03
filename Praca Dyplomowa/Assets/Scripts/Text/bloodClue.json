@@ -1,0 +1,12 @@
+{
+  "text": "Krew le�y blisko ofiary ale nie wiadomo do kogo nale�y. Oznaczasz miejsce m�otka odpowiednim opisem po�o�enia, zdj�ciem i numerkiem poszlaki. Dodatkowo oznaczasz miejsce plamy u�ywaj�c� znacznik�w. Zak�adasz r�kawiczki. Co z ni� zrobi�?",
+  "option1": "Zachowujesz si� nieostro�nie i zanieczyszczasz �lad.",
+  "option2": "Delikatnie zdejmij plam� krwi, u�ywaj�c papieru bibu�owego, zbierz ca�� plam�, w��cznie z centraln� cz�ci� i w�� do odpowiednio oznakowanego opakowania.",
+  "option3": "Delikatnie zdejmij plam� krwi, u�ywaj�c papieru bibu�owego, zbierz kawa�ek plamy i w�� do odpowiednio oznakowanego opakowania.",
+  "option4": "Nie zabezpieczasz plamy i j� zostawiasz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

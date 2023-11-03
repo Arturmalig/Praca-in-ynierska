@@ -7,6 +7,8 @@ TagManager:
   - blood
   - knife
   - Controller
+  - cup
+  - hammer
   layers:
   - Default
   - TransparentFX

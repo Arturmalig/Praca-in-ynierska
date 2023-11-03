@@ -1,0 +1,12 @@
+{
+  "text": "Zakrwawiony m�otek, podejrzane. Oznaczasz miejsce m�otka odpowiednim opisem po�o�enia, zdj�ciem i numerkiem poszlaki. Zak�adasz r�kawiczki. Co z nim zrobi�?",
+  "option1": "Podnie� m�otek za r�koje�� i w�� do odpowiednio oznakowanego opakowania.",
+  "option2": "Podnie� m�otek za zakrwawion� cz�� i w�� do odpowiednio oznakowanego opakowania.",
+  "option3": "odnie� m�otek za czyst� metalow� cz�� i w�� do odpowiednio oznakowanego opakowania.",
+  "option4": "Zostawiasz m�otek i nic z nimi wi�cej nie robisz",
+  "value1": 0,
+  "value2": 0,
+  "value3": 1,
+  "value4": 2
+
+}

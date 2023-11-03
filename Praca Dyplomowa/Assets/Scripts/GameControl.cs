@@ -12,14 +12,28 @@ public class GameControl : MonoBehaviour
 
     public GameObject Panel;// Canvas
 
+    public int lngth = 0;
+
     public void Start()
     {
         Time.timeScale = 1;
+        lngth = GameObject.FindGameObjectsWithTag("blood").Length + GameObject.FindGameObjectsWithTag("knife").Length + GameObject.FindGameObjectsWithTag("hammer").Length + GameObject.FindGameObjectsWithTag("cup").Length;
+
+
     }
 
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0;
+            Cursor.visible = true; // wlaczamy widocznosc kursora
+            Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
+            Panel.SetActive(true);
+            
+
+        }
+        if (value >=lngth)// konczenie mapy
         {
             Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora

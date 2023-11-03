@@ -1,82 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+using System.IO;
+
+
 
 public class DialogueOptions : MonoBehaviour
 {
-    public class OptionChoice // zmienna sluzaca do tworzenia nizej tablic
+
+    public ItemData itemData;
+    
+
+    public ItemData LoadJson(string tag)
     {
-        public string text { get; set; }
-        public int value { get; set; }
+        ItemData wynik;
+        string json = File.ReadAllText(".\\Assets\\Scripts\\Text\\" + tag + "Clue.json");
+        wynik = JsonUtility.FromJson<ItemData>(json);
+        return wynik;
     }
-    public OptionChoice[] bloodOp = new OptionChoice[] // tablica zawierajaca opcje na buttony kiedy klikniemy na krew
-    {
-        new OptionChoice { text = "Zbierz", value = 1},
-        new OptionChoice { text = "Poliz", value = 0},
-        new OptionChoice { text = "Pomaluj", value = 0},
-        new OptionChoice { text = "OdejdŸ", value = 2}
-
-    };
-
-    public OptionChoice[] knifeOp = new OptionChoice[] // tablica zawierajaca opcje na buttony kiedy klikniemy na noz
-    {
-        new OptionChoice { text = "Zabezpiecz", value = 1},
-        new OptionChoice { text = "Dzgnij", value = 0},
-        new OptionChoice { text = "Pomachaj", value = 0},
-        new OptionChoice { text = "OdejdŸ", value = 2}
-
-    };
-
     public void DialReturn(GameObject tekst, Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
     {
-        
-        if (tag == "blood") // Wprowadzanie linii dialogowych i opcji na przyciskach dla krwii
-        {
-            // Linia dialogowa
-            tekst.GetComponent<TMP_Text>().text = "Dotknales krwi lol";
-            //Opcje na przyciskach
-            op1.GetComponentInChildren<TMP_Text>().text = bloodOp[0].text;
-            op2.GetComponentInChildren<TMP_Text>().text = bloodOp[1].text;
-            op3.GetComponentInChildren<TMP_Text>().text = bloodOp[2].text;
-            op4.GetComponentInChildren<TMP_Text>().text = bloodOp[3].text;
-            // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
 
-        }
-        if (tag == "knife") // Wprowadzanie linii dialogowych i opcji na przyciskach dla no¿a
-        {
-            // Linia dialogowa
-            tekst.GetComponent<TMP_Text>().text = "Dotknales noza hehe";
-            //Opcje na przyciskach
-            op1.GetComponentInChildren<TMP_Text>().text = knifeOp[0].text;
-            op2.GetComponentInChildren<TMP_Text>().text = knifeOp[1].text;
-            op3.GetComponentInChildren<TMP_Text>().text = knifeOp[2].text;
-            op4.GetComponentInChildren<TMP_Text>().text = knifeOp[3].text;
-            // Tworzenie tablicy do zwrotu - MOZE DO ZROBIENIA LOSOWA KOLEJNOSC DIALOGOW
+        itemData = LoadJson(tag);
+        Debug.Log(itemData.text);
+        tekst.GetComponent<TMP_Text>().text = itemData.text;
+        op1.GetComponentInChildren<TMP_Text>().text = itemData.option1;
+        op2.GetComponentInChildren<TMP_Text>().text = itemData.option2;
+        op3.GetComponentInChildren<TMP_Text>().text = itemData.option3;
+        op4.GetComponentInChildren<TMP_Text>().text = itemData.option4;
 
-        }
+
     }
 
-    List<int> tab = new List<int>();
-    public void ValueReturn(string tag)
-    {
-        if(tag=="blood")
-        {
-            tab.Add(bloodOp[0].value);
-            tab.Add(bloodOp[1].value);
-            tab.Add(bloodOp[2].value);
-            tab.Add(bloodOp[3].value);
-        }
-        if(tag=="knife")
-        {
-            tab.Add(knifeOp[0].value);
-            tab.Add(knifeOp[1].value);
-            tab.Add(knifeOp[2].value);
-            tab.Add(knifeOp[3].value);
-        }
-    }
 
     public void DialogueClosing(GameObject Panel) // Zamykanie okna dialogowego - zabieg estetyczny, zeby w ObjectClickEvent nie powtarzac 4 razy tych samych linijek
     {
@@ -87,8 +45,18 @@ public class DialogueOptions : MonoBehaviour
 
     public void AddingValue(int choice, GameControl gc, GameObject item, string tag) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
     {
-        Debug.Log(tag);
-        ValueReturn(tag);
+        List<int> tab = new List<int>();
+        itemData = LoadJson(tag);
+        tab.Add(itemData.value1);
+        tab.Add(itemData.value2);
+        tab.Add(itemData.value3);
+        tab.Add(itemData.value4);
+        Debug.Log(choice + " hehe ");
+        Debug.Log(tab.Count+ " count");
+        foreach (int i in tab)
+        {
+            Debug.Log(tab[i]);
+        }
         if (tab[choice] == 0)
         {
             item.SetActive(false);

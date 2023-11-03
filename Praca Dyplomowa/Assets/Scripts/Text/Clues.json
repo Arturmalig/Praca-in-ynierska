@@ -1,0 +1,48 @@
+{
+  "hammer": [
+    "Zakrwawiony młotek, podejrzane. Oznaczasz miejsce młotka odpowiednim opisem położenia, zdjęciem i numerkiem poszlaki. Zakładasz rękawiczki. Co z nim zrobić?",
+    "Podnieś młotek za rękojeść i włóż do odpowiednio oznakowanego opakowania.",
+    "Podnieś młotek za zakrwawioną część i włóż do odpowiednio oznakowanego opakowania.",
+    "odnieś młotek za czystą metalową część i włóż do odpowiednio oznakowanego opakowania.",
+    "Zostawiasz młotek i nic z nimi więcej nie robisz",
+    "0",
+    "0",
+    "1",
+    "0"
+  ],
+
+  "blood": [
+    "Krew leży blisko ofiary ale nie wiadomo do kogo należy. Oznaczasz miejsce młotka odpowiednim opisem położenia, zdjęciem i numerkiem poszlaki. Dodatkowo oznaczasz miejsce plamy używającą znaczników. Zakładasz rękawiczki. Co z nią zrobić?",
+    "Zachowujesz się nieostrożnie i zanieczyszczasz ślad.",
+    "Delikatnie zdejmij plamę krwi, używając papieru bibułowego, zbierz całą plamę, włącznie z centralną częścią i włóż do odpowiednio oznakowanego opakowania.",
+    "Delikatnie zdejmij plamę krwi, używając papieru bibułowego, zbierz kawałek plamy i włóż do odpowiednio oznakowanego opakowania.",
+    "Nie zabezpieczasz plamy i ją zostawiasz.",
+    "0",
+    "1",
+    "0",
+    "0"
+  ],
+  "cup": [
+    "Widać że ktoś pił z tych szklanek. Oznaczasz miejsce szklanek odpowiednim opisem położenia, zdjęciem i numerkiem poszlaki. Zakładasz rękawiczki. Co z nimi zrobić?",
+    "Podnieś szklanki i włóż do odpowiednio oznakowanego opakowania.",
+    "Podnieś szklanki tak by nie zniszczyć odcisków palców i włóż do odpowiednio oznakowanego opakowania.",
+    "Rozbijasz szklanki",
+    "Zostawiasz szklanki i nic nie robisz",
+    "0",
+    "1",
+    "0",
+    "0"
+  ],
+  "knife": [
+    "N�, co� si� wymy�li",
+    "opt1",
+    "opt2",
+    "opt3",
+    "opt4",
+    "1",
+    "0",
+    "0",
+    "0"
+  ]
+
+}

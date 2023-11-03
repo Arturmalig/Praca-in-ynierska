@@ -1,0 +1,12 @@
+{
+  "text": "Wida� �e kto� pi� z tych szklanek. Oznaczasz miejsce szklanek odpowiednim opisem po�o�enia, zdj�ciem i numerkiem poszlaki. Zak�adasz r�kawiczki. Co z nimi zrobi�?",
+  "option1": "Podnie� szklanki i w�� do odpowiednio oznakowanego opakowania.",
+  "option2": "Podnie� szklanki tak by nie zniszczy� odcisk�w palc�w i w�� do odpowiednio oznakowanego opakowania.",
+  "option3": "Rozbijasz szklanki",
+  "option4": "Zostawiasz szklanki i nic nie robisz",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}
