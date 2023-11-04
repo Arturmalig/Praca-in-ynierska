@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class EscapeScript : MonoBehaviour
 {
+    public GameControl gc;
 
+    public void Start()
+    {
+        gc = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
+    }
     public void Resume()
     {
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
+        gc.isPaused = false;
     }
 
     public void Back()

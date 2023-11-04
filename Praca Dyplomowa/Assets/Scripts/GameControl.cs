@@ -14,11 +14,13 @@ public class GameControl : MonoBehaviour
 
     public int lngth = 0;
 
+    public bool isPaused = false;
+
     public void Start()
     {
         Time.timeScale = 1;
         lngth = GameObject.FindGameObjectsWithTag("blood").Length + GameObject.FindGameObjectsWithTag("knife").Length + GameObject.FindGameObjectsWithTag("hammer").Length + GameObject.FindGameObjectsWithTag("cup").Length;
-
+    
 
     }
 
@@ -26,6 +28,7 @@ public class GameControl : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            isPaused = true;
             Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora
             Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie

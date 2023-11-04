@@ -11,7 +11,6 @@ public class ObjectClickEvent : DialogueOptions
 {
     // Start is called before the first frame update
 
-    public Camera mainCamera;// Glowna kamera - sluzy do okreslania klikniecia na obiekt
     public float maxClickDistance = 10;//Maksymalna odleglosc z ktorej mozna kliknac przedmiot
     public GameObject Panel;// Canvas
     public GameObject Tekst;// Tekst dialogu na canvas
@@ -20,38 +19,37 @@ public class ObjectClickEvent : DialogueOptions
     public Button Option3;// Przycisk 3 na canvas
     public Button Option4;// Przycisk 4 na canvas
     public static string objectTag;//Tag obiektu, ktory kliknelismy
-    public GameControl control; // sluzy do zmiany ilosci zebranych obiektow
     public static GameObject item;
+    public Camera cam;
 
-
-    private void Start()
-    {
-        //dodanie akcji jaka ma sie wykonac po kliknieciu przycisku na canvasie
-        control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
-
-    }
 
     private void Update()
     {
         
         Cursor.visible = true;
-        if (Input.GetMouseButtonDown(0))
+
+        if(!control.isPaused)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, maxClickDistance)) // sprawdzamy czy w dystansie 10 jednostek udalo nam sie w cos kliknac
+
+            if (Input.GetMouseButtonDown(0))
             {
-                if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0)) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
+                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, maxClickDistance)) // sprawdzamy czy w dystansie 10 jednostek udalo nam sie w cos kliknac
                 {
-                    objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
-                    item = gameObject;
-                    DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
-                    Cursor.visible = true; // wlaczamy widocznosc kursora
-                    Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
-                    Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
+                    if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0)) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
+                    {
+                        control.isPaused = true;
+                        Time.timeScale = 0;
+                        objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
+                        item = gameObject;
+                        DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
+                        Cursor.visible = true; // wlaczamy widocznosc kursora
+                        Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
+                        Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
+                    }
                 }
             }
         }
-        
     }
 }

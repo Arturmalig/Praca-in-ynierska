@@ -11,15 +11,18 @@ namespace SojaExiles
 		public Animator openandclose;
 		public bool open;
 		public Transform Player;
+		public GameControl control;
 
 		void Start()
 		{
 			open = false;
-		}
+            control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
+        }
 
 		void OnMouseOver()
 		{
-			{
+            if (!control.isPaused)
+            {
 				if (Player)
 				{
 					float dist = Vector3.Distance(Player.position, transform.position);

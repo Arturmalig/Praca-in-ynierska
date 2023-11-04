@@ -12,7 +12,12 @@ public class DialogueOptions : MonoBehaviour
 {
 
     public ItemData itemData;
-    
+    public GameControl control;
+
+    public void Start()
+    {
+        control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
+    }
 
     public ItemData LoadJson(string tag)
     {
@@ -25,7 +30,6 @@ public class DialogueOptions : MonoBehaviour
     {
 
         itemData = LoadJson(tag);
-        Debug.Log(itemData.text);
         tekst.GetComponent<TMP_Text>().text = itemData.text;
         op1.GetComponentInChildren<TMP_Text>().text = itemData.option1;
         op2.GetComponentInChildren<TMP_Text>().text = itemData.option2;
@@ -41,6 +45,9 @@ public class DialogueOptions : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Panel.SetActive(false);
+        control.isPaused = false;
+        Time.timeScale = 1;
+
     }
 
     public void AddingValue(int choice, GameControl gc, GameObject item, string tag) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
