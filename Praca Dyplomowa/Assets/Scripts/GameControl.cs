@@ -8,11 +8,12 @@ public class GameControl : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int value = 0; // Ilosc zebranych poszlak
+    public int value = 0; // Ilosc zebranych dobrze poszlak
 
     public GameObject Panel;// Canvas
 
     public int lngth = 0;
+    public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
 
     public bool isPaused = false;
 
@@ -36,7 +37,7 @@ public class GameControl : MonoBehaviour
             
 
         }
-        if (value >=lngth)// konczenie mapy
+        if (allVal >=lngth)// konczenie mapy
         {
             Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora

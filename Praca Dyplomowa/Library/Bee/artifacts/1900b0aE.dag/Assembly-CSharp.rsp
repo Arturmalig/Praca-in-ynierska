@@ -385,6 +385,7 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
 "Assets/Scripts/SelectScript.cs"
+"Assets/Scripts/TutorialScript.cs"
 -langversion:9.0
 
 /deterministic

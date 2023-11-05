@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public void Options()
+    public void Tutorial()
     {
-        Debug.Log("Tu cos pewnie bedzie");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void QuitGame()

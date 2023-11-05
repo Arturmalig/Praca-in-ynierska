@@ -58,14 +58,9 @@ public class DialogueOptions : MonoBehaviour
         tab.Add(itemData.value2);
         tab.Add(itemData.value3);
         tab.Add(itemData.value4);
-        Debug.Log(choice + " hehe ");
-        Debug.Log(tab.Count+ " count");
-        foreach (int i in tab)
-        {
-            Debug.Log(tab[i]);
-        }
         if (tab[choice] == 0)
         {
+            
             item.SetActive(false);
             Debug.Log("Z³a opcja");
         }
@@ -80,5 +75,6 @@ public class DialogueOptions : MonoBehaviour
             Debug.Log("Odchodzisz");
             
         }
+        gc.allVal++;
     }
 }

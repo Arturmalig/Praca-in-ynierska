@@ -587,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036621094, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.00036621094, y: 0}
   m_SizeDelta: {x: 0.9000244, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52749816
@@ -842,7 +842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &346310526
@@ -857,6 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a247a55299cdf40837cb935a736ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  control: {fileID: 1309257511}
   maxClickDistance: 10
   Panel: {fileID: 346310524}
   Tekst: {fileID: 17873174}
@@ -864,7 +865,6 @@ MonoBehaviour:
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
-  control: {fileID: 1309257511}
   cam: {fileID: 0}
 --- !u!1 &380254194
 GameObject:
@@ -913,6 +913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4b2e6279751634d93a86beb07a989f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  control: {fileID: 0}
   maxClickDistance: 10
   Panel: {fileID: 346310524}
   Tekst: {fileID: 17873174}
@@ -920,7 +921,6 @@ MonoBehaviour:
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
-  control: {fileID: 0}
   cam: {fileID: 963194227}
 --- !u!65 &380254197
 BoxCollider:
@@ -2056,6 +2056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df4b2e6279751634d93a86beb07a989f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  control: {fileID: 0}
   maxClickDistance: 10
   Panel: {fileID: 346310524}
   Tekst: {fileID: 17873174}
@@ -2063,7 +2064,6 @@ MonoBehaviour:
   Option2: {fileID: 1593656829}
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
-  control: {fileID: 0}
   cam: {fileID: 963194227}
 --- !u!1 &1106907813
 GameObject:
@@ -2250,7 +2250,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -2338,7 +2338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -536.92, y: 275}
+  m_AnchoredPosition: {x: -880, y: 510}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146574578
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -0.76872253, y: 0.00000014875761, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2731,6 +2731,7 @@ MonoBehaviour:
   value: 0
   Panel: {fileID: 52749814}
   lngth: 0
+  allVal: 0
   isPaused: 0
 --- !u!4 &1309257512
 Transform:
