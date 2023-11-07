@@ -1,0 +1,12 @@
+{
+  "text": "Zwłoki starszego mężczyzny (emerytowanego nauczyciela) ma wbity nóż w klatkę piersiową. Oznaczasz położenie zwłok odpowiednim opisem, zdjęciem ,numerkiem poszlaki dodatkowo obrysowujesz kredą położenie zwłok na podłodze. Co z nimi zrobić dalej?",
+  "option1": "Dotykasz ciało w różne miejsca",
+  "option2": "Nic z nimi nie robisz ponad to co zrobiłeś. Ciałem zajmie się specjalista.",
+  "option3": "Wyjmujesz nóż i go zabezpieczasz.",
+  "option4": "Przekładzasz zwłoki w inne miejsce.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

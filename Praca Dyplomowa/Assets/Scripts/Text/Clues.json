@@ -33,6 +33,17 @@
     "0",
     "0"
   ],
+  "body2": [
+    "Zwłoki starszego mężczyzny (emerytowanego nauczyciela) ma wbity nóż w klatkę piersiową. Oznaczasz położenie zwłok odpowiednim opisem, zdjęciem ,numerkiem poszlaki dodatkowo obrysowujesz kredą położenie zwłok na podłodze. Co z nimi zrobić dalej?",
+    "Dotykasz ciało w różne miejsca",
+    "Nic z nimi nie robisz ponad to co zrobiłeś. Ciałem zajmie się specjalista.",
+    "Wyjmujesz nóż i go zabezpieczasz.",
+    "Przekładzasz zwłoki w inne miejsce.",
+    "0",
+    "1",
+    "0",
+    "0"
+  ],
   "knife": [
     "N�, co� si� wymy�li",
     "opt1",
