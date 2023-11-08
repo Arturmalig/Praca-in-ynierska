@@ -7,7 +7,7 @@ public class Counter : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Tekst;// Tekst licznika na canvas
-    public GameControl control;
+    private GameControl control;
 
     private void Start()
     {

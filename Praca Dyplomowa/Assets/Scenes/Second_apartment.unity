@@ -2115,8 +2115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 311, y: -26}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: 480, y: -64}
+  m_SizeDelta: {x: 960, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &183059010 stripped
 Transform:
@@ -2356,7 +2356,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1632.269, w: -206.99849}
+  m_margin: {x: 0, y: 0, z: 1.9410324, w: 3.2275505}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2386,8 +2386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -817, y: 373}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.00006485, y: 251}
+  m_SizeDelta: {x: 1920, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &227367734 stripped
 Transform:
@@ -9759,8 +9759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309, y: -298}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: 479.99997, y: -384}
+  m_SizeDelta: {x: 960, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004367880
 MonoBehaviour:
@@ -11327,7 +11327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -796, y: 460}
+  m_AnchoredPosition: {x: -860, y: 519.91}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137686417
@@ -15725,8 +15725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -556, y: -26}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: -480.00003, y: -64}
+  m_SizeDelta: {x: 960, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1572329319 stripped
 Transform:
@@ -18049,8 +18049,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -556, y: -298}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: -480, y: -384}
+  m_SizeDelta: {x: 960, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1735453353 stripped
 Transform:
@@ -20777,7 +20777,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1820, y: 1080}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

@@ -17,4 +17,12 @@ public class SelectScript : MonoBehaviour
     {
         SceneManager.LoadScene("First_apartment");
     }
+    public void Scene3Play() // klikniecie scena2
+    {
+        SceneManager.LoadScene("Second_apartment");
+    }
+    public void Scene4Play() // klikniecie scena2
+    {
+        SceneManager.LoadScene("Third_apartment");
+    }
 }
