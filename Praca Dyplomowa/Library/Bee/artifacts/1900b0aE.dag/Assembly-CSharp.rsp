@@ -377,6 +377,7 @@
 "Assets/Scripts/ClueOptions.cs"
 "Assets/Scripts/Counter.cs"
 "Assets/Scripts/DialogueOptions.cs"
+"Assets/Scripts/EndMenuScript.cs"
 "Assets/Scripts/EscapeScript.cs"
 "Assets/Scripts/GameControl.cs"
 "Assets/Scripts/ItemData.cs"

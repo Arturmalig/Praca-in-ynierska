@@ -11,11 +11,11 @@ public class Counter : MonoBehaviour
     private void Start()
     {
         control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
-        Tekst.GetComponent<TMP_Text>().text = "Zebrane poszlaki: " + control.value + "/" + control.lngth;
+        Tekst.GetComponent<TMP_Text>().text = "Zebrane poszlaki: " + control.allVal + "/" + control.lngth;
 
     }
     void Update()
     {
-        Tekst.GetComponent<TMP_Text>().text = "Zebrane poszlaki: " + control.value + "/" + control.lngth;
+        Tekst.GetComponent<TMP_Text>().text = "Zebrane poszlaki: " + control.allVal + "/" + control.lngth;
     }
 }

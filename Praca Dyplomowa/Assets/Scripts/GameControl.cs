@@ -10,7 +10,9 @@ public class GameControl : MonoBehaviour
 
     public int value = 0; // Ilosc zebranych dobrze poszlak
 
-    public GameObject Panel;// Canvas
+    public GameObject panel;
+    private GameObject Counter;
+    public GameObject panelEnd;
 
     public int lngth = 0;
     public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
@@ -20,8 +22,10 @@ public class GameControl : MonoBehaviour
     public void Start()
     {
         Time.timeScale = 1;
-        lngth = GameObject.FindGameObjectsWithTag("blood").Length + GameObject.FindGameObjectsWithTag("knife").Length + GameObject.FindGameObjectsWithTag("hammer").Length + GameObject.FindGameObjectsWithTag("cup").Length;
-    
+        GameObject parentObject = GameObject.Find("Poszlaki");
+        lngth = parentObject.transform.childCount;
+        Counter = GameObject.Find("Licznik");
+
 
     }
 
@@ -33,16 +37,17 @@ public class GameControl : MonoBehaviour
             Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora
             Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
-            Panel.SetActive(true);
+            panel.SetActive(true);
             
 
         }
         if (allVal >=lngth)// konczenie mapy
         {
+            Counter.SetActive(false);
             Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora
             Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
-            Panel.SetActive(true);
+            panelEnd.SetActive(true);
         }
     }
 
