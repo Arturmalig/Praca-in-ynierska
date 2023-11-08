@@ -5,7 +5,6 @@ using TMPro;
 
 public class Counter : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject Tekst;// Tekst licznika na canvas
     private GameControl control;
 
