@@ -1,0 +1,12 @@
+{
+  "text": "Krew lub inna czerwona substancja le¿y na ofierze ale nie wiadomo do kogo nale¿y. Oznaczasz miejsce krwi odpowiednim opisem po³o¿enia, zdjêciem i numerkiem poszlaki. Dodatkowo oznaczasz miejsce plamy u¿ywaj¹c¹ znaczników. Co z ni¹ zrobiæ?",
+  "option1": "Zachowujesz siê nieostro¿nie i zanieczyszczasz œlad.",
+  "option2": "Delikatnie zdejmij plamê krwi, u¿ywaj¹c papieru bibu³owego, zbierz ca³¹ plamê, w³¹cznie z centraln¹ czêœci¹ i w³ó¿ do odpowiednio oznakowanego opakowania.",
+  "option3": "Delikatnie zdejmij plamê krwi, u¿ywaj¹c papieru bibu³owego, zbierz kawa³ek plamy i w³ó¿ do odpowiednio oznakowanego opakowania.",
+  "option4": "Nie zabezpieczasz plamy i j¹ zostawiasz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

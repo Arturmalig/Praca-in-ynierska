@@ -1,0 +1,12 @@
+{
+  "text": "Klucz znajduje siê obok buta, mo¿na za³o¿yæ ¿e nie powinien tu byæ. Mo¿e wypad³ zabójcy. Oznaczasz po³o¿enie klucza odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nim zrobiæ dalej?",
+  "option1": "Sprawdzasz do których drzwi pasuje potem go zabezpieczasz.",
+  "option2": "Szukasz œladów i nic nie udaje ci siê znaleŸæ, nastêpnie sprawdzasz do których drzwi pasuje i s¹ to drzwi wejœciowe, notujesz to w protokole i zabezpieczasz klucz.",
+  "option3": "Przestawiasz klucz w inne miejsce.",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

@@ -1,0 +1,12 @@
+{
+  "text": "W sypialni na ³ó¿ku znajduje siê list mi³osny. Jest on skierowany do ofiary. Oznaczasz po³o¿enie listu odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nimi zrobiæ dalej?",
+  "option1": "Szukasz odcisków palców i znajdujesz ich kilka, nastêpnie wszystko zabezpieczasz.",
+  "option2": "Chowasz list i go nie zabezpieczasz.",
+  "option3": "Bierzesz list i czytasz go, potem szukasz odcisków.",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

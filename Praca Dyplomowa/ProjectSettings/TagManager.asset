@@ -9,6 +9,22 @@ TagManager:
   - Controller
   - cup
   - hammer
+  - body2
+  - blood2
+  - documents
+  - letter
+  - medicine
+  - destroy
+  - body3
+  - knife2
+  - blood3
+  - clock
+  - hammer2
+  - shoe
+  - letter2
+  - key
+  - painting
+  - window
   layers:
   - Default
   - TransparentFX

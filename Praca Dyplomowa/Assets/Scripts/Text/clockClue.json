@@ -1,0 +1,12 @@
+{
+  "text": "Na œcianie znajduje siê zegar z wbitym w niego m³otkiem, pod zegarem znajduje siê ofiara. Mo¿e sprawca nie trafi³ w ofiare m³otkiem?. Oznaczasz po³o¿enie zegara odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nim zrobiæ dalej?",
+  "option1": "Szukasz odcisków palców i udaje ci siê znaleŸæ 2 odciski palców, zabezpieczasz zegar i odciski.",
+  "option2": "Zauwa¿asz ¿e zegar zatrzyma³ siê na 23:37, mo¿e to godzina œmierci ofiary. Dodatkowo znajdujesz odciski palców. Zabezpieczasz œlady i odnotowujesz godzinne w protokole.",
+  "option3": "Zabespieczasz zegar.",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

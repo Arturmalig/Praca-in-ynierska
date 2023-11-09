@@ -1,0 +1,12 @@
+{
+  "text": "Dokumenty wygl¹daj tak jakby nie mia³y siê tu znajdowaæ. Otwarte s¹ na rachunkach za pr¹d. Byæ mo¿e ktoœ je przeszukiwa³ w pospiechu. Oznaczasz miejsce dokumentów odpowiednim opisem po³o¿enia, zdjêciem i numerkiem poszlaki. Co z nimi zrobiæ?",
+  "option1": "Uwa¿asz ¿e s¹ niewa¿ne i nie odnotowujesz ich obecnoœci w protokole.",
+  "option2": "Zabezpieczasz dokumenty w taki sposób by nie naruszyæ ewentualnych œladów i zabezpieczasz je w odpowiednim opakowaniu.",
+  "option3": "Szukasz odcisków palców za pomoc¹ pêdzelka i udaje ci siê znaleŸæ jeden odcisk palca którego zabezpieczasz wraz z dokumentami w odpowiednie opakowania.",
+  "option4": "Nic z nimi nie robisz i odchodzisz.",
+  "value1": 0,
+  "value2": 0,
+  "value3": 1,
+  "value4": 2
+
+}

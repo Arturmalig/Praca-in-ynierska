@@ -1,0 +1,12 @@
+{
+  "text": "Zgubiony but sugeruje ¿e têdy uciek³ sprawca. Oznaczasz po³o¿enie okna odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nim zrobiæ dalej?",
+  "option1": "Zamykasz okno.",
+  "option2": "Szukasz odcisków i znajdujesz 3 odciski palców, zabezpieczasz je do odpowiedniego opakowania.",
+  "option3": "Stwierdzasz ¿e nie uciek³ on oknem bo apartament znajduje siê na 2 piêtrze.",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

@@ -1,0 +1,12 @@
+{
+  "text": "W jednej z sypialni na œcianie zauwa¿asz czarny odcisk tak jakby mia³o coœ byæ na tej œcianie. Oznaczasz po³o¿enie okna odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nim zrobiæ dalej?",
+  "option1": "Ignorujesz œlad",
+  "option2": "Stwierdzasz ¿e tak po prostu ktoœ pomalowa³ œcianê.",
+  "option3": "Piszesz w protokole ¿e byæ mo¿e znajdowa³ siê tu obraz gdy¿ ofiara by³a malark¹",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 0,
+  "value2": 0,
+  "value3": 1,
+  "value4": 2
+
+}

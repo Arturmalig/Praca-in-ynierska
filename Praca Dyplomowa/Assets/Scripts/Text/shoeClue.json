@@ -1,0 +1,12 @@
+{
+  "text": "Jeden but(wygl¹da na mêski) na szafce w kuchni. Oznaczasz po³o¿enie buta odpowiednim opisem, zdjêciem ,numerkiem poszlaki. Co z nimi zrobiæ dalej?",
+  "option1": "Poszukujesz odcisków, jednak nic nie znajdujesz, zabezpieczasz poszlakê tak by nie zatrzeæ ewentualnych œladów.",
+  "option2": "Ignorujesz obecnoœæ buta i nie uwa¿asz go za poszlakê.",
+  "option3": "Przymierzasz but do swojej nogi.",
+  "option4": "Odchodzisz i nic nie robisz.",
+  "value1": 1,
+  "value2": 0,
+  "value3": 0,
+  "value4": 2
+
+}

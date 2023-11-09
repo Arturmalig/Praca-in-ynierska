@@ -1,0 +1,12 @@
+{
+  "text": "Najpewniej narzędzie zbrodni. Wbity mocno w ciało ofiary. Oznaczasz położenie noża odpowiednim opisem, zdjęciem i numerkiem poszlaki. Co z nimi zrobić dalej?",
+  "option1": "Wyjmujesz nóż i go zabezpieczasz.",
+  "option2": "Za pomocą pędzla odpowiedniej wielkości nanosisz proszek kontrastujący z powierzchnia rękojeści by następnie użyć foli daktyloskopijnej do zebrania odcisków na rękojeści. Zabezpieczać folie do odpowiedniego opakowania.",
+  "option3": "Za pomocą pędzla dużej wielkości nanosisz proszek by następnie użyć foli daktyloskopijnej do zebrania odcisków na rękojeści. Zabezpieczać folie do odpowiedniego opakowania.",
+  "option4": "Nic nie robisz i odchodzisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

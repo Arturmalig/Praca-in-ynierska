@@ -1,0 +1,12 @@
+{
+  "text": "Na stole znajduje siê list. Znajduj¹ siê w nim groŸby œmierci, nie jest podpisany ani nie ma w nim mowy o adresacie. Oznaczasz miejsce listu odpowiednim opisem po³o¿enia, zdjêciem i numerkiem poszlaki. Co z nim zrobiæ?",
+  "option1": "Szukasz odcisków palców, udaje ci siê znaleŸæ 3 odciski palców zabezpieczasz je tak jak i list.",
+  "option2": "Zabezpieczasz list do odpowiedniego opakowania.",
+  "option3": "Zmieniasz treœæ listu i go zabezpieczasz.",
+  "option4": "Nic z nim nie robisz i odchodzisz.",
+  "value1": 1,
+  "value2": 0,
+  "value3": 0,
+  "value4": 2
+
+}

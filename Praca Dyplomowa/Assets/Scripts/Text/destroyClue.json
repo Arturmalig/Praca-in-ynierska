@@ -1,0 +1,12 @@
+{
+  "text": "Wygl¹da na to ¿e dosz³o do jakiejœ szarpaniny ale mo¿e tak ju¿ by³o przed zajœciem. Przeszukujesz szafkê ale nie ma w niej nic ciekawego. Oznaczasz miejsce mebli odpowiednim opisem po³o¿enia, zdjêciem i numerkiem poszlaki. Co z nimi zrobiæ?",
+  "option1": "Ignorujesz porozrzucane meble.",
+  "option2": "Szukasz œladów na szafce i udaje ci siê znaleŸæ odcisk d³oni,  zabezpieczasz go do odpowiedniego opakowania.",
+  "option3": "Ustawisz szafkê przy œcianie i kontynuujesz poszukiwanie œladów",
+  "option4": "Nic z nimi nie robisz i odchodzisz.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

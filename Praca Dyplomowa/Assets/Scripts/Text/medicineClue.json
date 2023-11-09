@@ -1,0 +1,12 @@
+{
+  "text": "W ³azience znajduje siê pusta apteczka i pude³ko na tabletki, ale brak recepty ani dowodów na korzystanie z tych leków przez ofiarê. Nie wiadomo co to za leki.Oznaczasz miejsce mebli odpowiednim opisem po³o¿enia, zdjêciem i numerkiem poszlaki. Co z nimi zrobiæ?",
+  "option1": "Szukasz odcisków palców i zabezpieczasz oba pude³ka. Nie znajduesz ¿adnych odcisków",
+  "option2": "Szukasz odcisków palców i zabezpieczasz apteczke. Nie znajduesz ¿adnych odcisków",
+  "option3": "Szukasz odcisków palców i zabezpieczasz pude³ko. Nie znajduesz ¿adnych odcisków",
+  "option4": "Nic nie robisz i odchodzisz",
+  "value1": 1,
+  "value2": 0,
+  "value3": 0,
+  "value4": 2
+
+}
