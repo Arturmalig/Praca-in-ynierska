@@ -11,8 +11,9 @@ public class GameControl : MonoBehaviour
     public int value = 0; // Ilosc zebranych dobrze poszlak
 
     public GameObject panel;
-    private GameObject Counter;
+    public GameObject Counter;
     public GameObject panelEnd;
+    public GameObject panelClick;
 
     public int lngth = 0;
     public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
@@ -21,22 +22,33 @@ public class GameControl : MonoBehaviour
 
     public void Start()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
+        isPaused = true;
         GameObject parentObject = GameObject.Find("Poszlaki");
         lngth = parentObject.transform.childCount;
         Counter = GameObject.Find("Licznik");
-
+        Counter.SetActive(false);
 
     }
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(isPaused)
         {
-            isPaused = true;
-            Time.timeScale = 0;
             Cursor.visible = true; // wlaczamy widocznosc kursora
             Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked; // odblokowujemy poruszanie kursorem po ekranie
+        }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            panelClick.SetActive(false);
+            panelEnd.SetActive(false);
+            isPaused = true;
+            Time.timeScale = 0;
+
             panel.SetActive(true);
             
 
@@ -45,8 +57,7 @@ public class GameControl : MonoBehaviour
         {
             Counter.SetActive(false);
             Time.timeScale = 0;
-            Cursor.visible = true; // wlaczamy widocznosc kursora
-            Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
+            isPaused = true;
             panelEnd.SetActive(true);
         }
     }

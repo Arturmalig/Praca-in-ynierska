@@ -385,6 +385,7 @@
 "Assets/Scripts/MeshCombiner.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/Movement.cs"
+"Assets/Scripts/NextScript.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
 "Assets/Scripts/SelectScript.cs"
 "Assets/Scripts/TextChange.cs"

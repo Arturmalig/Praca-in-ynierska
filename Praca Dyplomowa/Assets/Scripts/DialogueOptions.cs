@@ -63,18 +63,20 @@ public class DialogueOptions : MonoBehaviour
             
             item.SetActive(false);
             Debug.Log("Z³a opcja");
+            gc.allVal++;
         }
         if (tab[choice] == 1)
         {
             gc.value++; 
             Debug.Log("Dobra opcja");
             item.SetActive(false);
+            gc.allVal++;
         }
         if(tab[choice] == 2)
         {
             Debug.Log("Odchodzisz");
             
         }
-        gc.allVal++;
+        
     }
 }
