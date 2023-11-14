@@ -2523,7 +2523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d499ce35aa2044fa0e9cc9d2e10348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Counter: {fileID: 610940662}
+  counter: {fileID: 610940662}
+  tekst: {fileID: 1484299650}
 --- !u!114 &320206512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9911,7 +9912,7 @@ GameObject:
   - component: {fileID: 1122319221}
   - component: {fileID: 1122319220}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12951,7 +12952,7 @@ GameObject:
   - component: {fileID: 1484299653}
   - component: {fileID: 1484299652}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Tekst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

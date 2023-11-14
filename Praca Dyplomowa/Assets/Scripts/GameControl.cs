@@ -41,25 +41,26 @@ public class GameControl : MonoBehaviour
         else
         {
             Cursor.lockState = CursorLockMode.Locked; // odblokowujemy poruszanie kursorem po ekranie
-        }
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            panelClick.SetActive(false);
-            panelEnd.SetActive(false);
-            isPaused = true;
-            Time.timeScale = 0;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                panelClick.SetActive(false);
+                panelEnd.SetActive(false);
+                isPaused = true;
+                Time.timeScale = 0;
 
-            panel.SetActive(true);
-            
+                panel.SetActive(true);
 
+
+            }
+            if (allVal >= lngth)// konczenie mapy
+            {
+                Counter.SetActive(false);
+                Time.timeScale = 0;
+                isPaused = true;
+                panelEnd.SetActive(true);
+            }
         }
-        if (allVal >=lngth)// konczenie mapy
-        {
-            Counter.SetActive(false);
-            Time.timeScale = 0;
-            isPaused = true;
-            panelEnd.SetActive(true);
-        }
+        
     }
 
 

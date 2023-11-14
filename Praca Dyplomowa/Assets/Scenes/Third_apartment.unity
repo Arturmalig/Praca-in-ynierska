@@ -19365,7 +19365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d499ce35aa2044fa0e9cc9d2e10348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Counter: {fileID: 1159095005}
+  counter: {fileID: 1159095005}
+  tekst: {fileID: 1681243929}
 --- !u!1 &1400986357
 GameObject:
   m_ObjectHideFlags: 0
@@ -23202,7 +23203,7 @@ GameObject:
   - component: {fileID: 1681243932}
   - component: {fileID: 1681243931}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Tekst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24746,7 +24747,7 @@ GameObject:
   - component: {fileID: 1816471887}
   - component: {fileID: 1816471886}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

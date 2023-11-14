@@ -699,7 +699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d499ce35aa2044fa0e9cc9d2e10348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Counter: {fileID: 1146574576}
+  counter: {fileID: 1146574576}
+  tekst: {fileID: 1610127817}
 --- !u!1 &159712983
 GameObject:
   m_ObjectHideFlags: 0
