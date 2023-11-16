@@ -29,7 +29,7 @@ public class TextChange : MonoBehaviour
 
     public Texture2D PhotoChange(string data, int number)
     {
-        string path = ".\\Assets\\Scripts\\Text\\" + data + "Photo" + number + ".png";
+        string path = ".\\Assets\\Scripts\\Photos\\" + data + "Photo" + number + ".png";
         if (System.IO.File.Exists(path))
         {
             fileData = File.ReadAllBytes(path);

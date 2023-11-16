@@ -339,7 +339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 152526629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152526629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,7 +472,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 164167483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164167483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +873,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 337809483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &337809483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1493,7 +1529,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 827142727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &827142727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1662,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942802305}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942802305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,7 +1795,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 955331881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &955331881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,7 +2268,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1102082159}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1102082159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3746,7 +3830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1632402421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1632402421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4001,7 +4097,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1712045355}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1712045355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4334,7 +4442,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1920505359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1920505359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4503,7 +4623,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051264505}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870276908}
+        m_TargetAssemblyTypeName: TextChange, Assembly-CSharp
+        m_MethodName: TextPhotoChanging
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2051264505
 MonoBehaviour:
   m_ObjectHideFlags: 0
