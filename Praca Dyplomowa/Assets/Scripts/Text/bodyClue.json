@@ -1,0 +1,12 @@
+{
+  "text": "The body of a young man with a blunt force injury to the forehead. You indicate the location of the body with an appropriate description in the inspection protocol, a evidence label, a photograph, a letter of the alphabet, and outline the position of the body on the floor with chalk. What should be done next?",
+  "option1": "Carelessly, you search through the corpse and contaminate any potential fingerprints.",
+  "option2": "After conducting a careful search, you leave the body. A specialist will handle the remains.",
+  "option3": "You behave carelessly and step into a red fluid.",
+  "option4": "You do nothing for now.",
+  "value1": 0,
+  "value2": 1,
+  "value3": 0,
+  "value4": 2
+
+}

@@ -1,12 +1,12 @@
 {
-  "text": "Wida� �e kto� pi� z tych szklanek. Oznaczasz miejsce szklanek odpowiednim opisem po�o�enia, zdj�ciem i numerkiem poszlaki. Zak�adasz r�kawiczki. Co z nimi zrobi�?",
-  "option1": "Podnie� szklanki i w�� do odpowiednio oznakowanego opakowania.",
-  "option2": "Podnie� szklanki tak by nie zniszczy� odcisk�w palc�w i w�� do odpowiednio oznakowanego opakowania.",
-  "option3": "Rozbijasz szklanki",
+  "text": "It appears that someone drank from these glasses. You mark the location of the glasses with an appropriate description in the protocol and on the evidence label, take a photograph, and assign a reference number. What do you do with them next?",
+  "option1": "Lift the glasses in a standard manner and place them into a properly labeled container.",
+  "option2": "You leave the glasses and do nothing.",
+  "option3": "You find fingerprints after applying powder, which you note in the protocol. Lift the glasses carefully to preserve the fingerprints, and place them into a properly labeled container.",
   "option4": "Zostawiasz szklanki i nic nie robisz",
   "value1": 0,
-  "value2": 1,
-  "value3": 0,
+  "value2": 0,
+  "value3": 1,
   "value4": 2
 
 }
