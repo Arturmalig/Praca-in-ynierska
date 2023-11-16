@@ -1,0 +1,3 @@
+A evidence label is used to describe the revealed trace/object; it should include:
+Description of the trace: location, properties of the trace and substrate, method of discovery, method of technical securing, labeling of the trace with Arabic numerals in the order of discovery.
+The metric is always attached to the found trace/object.

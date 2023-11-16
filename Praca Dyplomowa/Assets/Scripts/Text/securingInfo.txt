@@ -1,0 +1,1 @@
+After describing each piece of evidence in the protocol, and evidence label we place them in appropriately sized containers, whenever possible, to avoid damage or contamination. Additionally, we attach the metric and any fingerprints to them. Each trace is marked with a number, and each item from the body is labeled with a letter in the alphabet.
