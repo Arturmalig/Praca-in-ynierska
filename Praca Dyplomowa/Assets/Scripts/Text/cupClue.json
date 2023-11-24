@@ -1,9 +1,9 @@
 {
   "text": "It appears that someone drank from these glasses. You mark the location of the glasses with an appropriate description in the protocol and on the evidence label, take a photograph, and assign a reference number. What do you do with them next?",
   "option1": "Lift the glasses in a standard manner and place them into a properly labeled container.",
-  "option2": "You leave the glasses and do nothing.",
+  "option2": "You smash the glasses",
   "option3": "You find fingerprints after applying powder, which you note in the protocol. Lift the glasses carefully to preserve the fingerprints, and place them into a properly labeled container.",
-  "option4": "Zostawiasz szklanki i nic nie robisz",
+  "option4": "You leave the glasses and do nothing.",
   "value1": 0,
   "value2": 0,
   "value3": 1,
