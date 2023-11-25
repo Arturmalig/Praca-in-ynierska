@@ -17,6 +17,8 @@ public class DialogueOptions : MonoBehaviour
     public void Start()
     {
         control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
+        control.textEnd.GetComponent<TMP_Text>().richText = true;
+        control.textEnd.GetComponent<TMP_Text>().text = "";
     }
 
     public ItemData LoadJson(string tag)
@@ -58,25 +60,28 @@ public class DialogueOptions : MonoBehaviour
         tab.Add(itemData.value2);
         tab.Add(itemData.value3);
         tab.Add(itemData.value4);
+        string tagClean = "";
+        for (int i = 0; i< tag.Length; i++)
+        {
+
+            if (tag[i] >= '0' && tag[i] <= '9') continue;
+            else if (tagClean == "") tagClean =  tagClean + char.ToUpper(tag[i]);
+            else tagClean = tagClean + tag[i];
+        }
         if (tab[choice] == 0)
         {
             
             item.SetActive(false);
-            Debug.Log("Z³a opcja");
             gc.allVal++;
+            control.textEnd.GetComponent<TMP_Text>().text = control.textEnd.GetComponent<TMP_Text>().text + "<color=red>" + tagClean + " was incorrectly secured. </color> \n ";
         }
         if (tab[choice] == 1)
         {
             gc.value++; 
-            Debug.Log("Dobra opcja");
             item.SetActive(false);
             gc.allVal++;
+            control.textEnd.GetComponent<TMP_Text>().text = control.textEnd.GetComponent<TMP_Text>().text + "<color=green>" + tagClean + " was correctly secured. </color> \n";
         }
-        if(tab[choice] == 2)
-        {
-            Debug.Log("Odchodzisz");
-            
-        }
-        
+
     }
 }

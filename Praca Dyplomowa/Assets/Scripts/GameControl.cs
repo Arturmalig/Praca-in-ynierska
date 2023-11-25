@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
+using static System.Net.Mime.MediaTypeNames;
 
 public class GameControl : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public int value = 0; // Ilosc zebranych dobrze poszlak
-
-    public GameObject panel;
-    public GameObject Counter;
-    public GameObject panelEnd;
-    public GameObject panelClick;
+    public GameObject panel; // panel przerwy
+    public GameObject Counter; // licznik
+    public GameObject panelEnd; // panel koñcowy
+    public GameObject panelClick; // panel klikniêcia na obiekt
+    public GameObject textEnd; // tekst wypisywany na panelu koñcowym
 
     public int lngth = 0;
     public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
@@ -28,11 +29,13 @@ public class GameControl : MonoBehaviour
         lngth = parentObject.transform.childCount;
         Counter = GameObject.Find("Licznik");
         Counter.SetActive(false);
+        textEnd.GetComponent<TMP_Text>().richText = true;
 
     }
 
     public void Update()
     {
+        
         if(isPaused)
         {
             Cursor.visible = true; // wlaczamy widocznosc kursora
@@ -58,6 +61,7 @@ public class GameControl : MonoBehaviour
                 Time.timeScale = 0;
                 isPaused = true;
                 panelEnd.SetActive(true);
+
             }
         }
         
