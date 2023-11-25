@@ -5,50 +5,48 @@ using TMPro;
 using System.IO;
 using System.Globalization;
 using UnityEngine.UI;
-
-
+using Unity.VisualScripting;
 
 public class TextChange : MonoBehaviour
 {
-    public GameObject text, photos;// Tekst na canvas
-    public GameObject photo1, photo2, photo3, photo4;
-    public byte[] fileData;
+    public GameObject text, photos;// Tekst i zdjêcia na canvas
+    public byte[] fileData; // tablica do wczytania grafiki zdjêcia
+    public string tutTag;
+    public Button photoButton;
 
     private void Start()
     {
         text.GetComponent<TMP_Text>().text = "";
     }
 
-    public string Load(string data)
+    public Texture2D PhotoChange(string data)
     {
-
-        string wynik = File.ReadAllText(".\\Assets\\Scripts\\Text\\" + data + "Info.txt");
-        return wynik;
-    }
-
-
-    public Texture2D PhotoChange(string data, int number)
-    {
-        string path = ".\\Assets\\Scripts\\Photos\\" + data + "Photo" + number + ".png";
+        string path = ".\\Assets\\Scripts\\Photos\\" + data + ".png";
         if (System.IO.File.Exists(path))
         {
             fileData = File.ReadAllBytes(path);
             Texture2D tex = new Texture2D(300, 370);
             tex.LoadImage(fileData);
+            photos.SetActive(true);
             return tex;
         }
         else return null;
 
     }
-    public void TextPhotoChanging(string info)
+    public void TextChanging(string info)
     {
-        string data= Load(info);
-        text.GetComponent<TMP_Text>().text = data;
-        photos.SetActive(true);
-        photo1.GetComponent<RawImage>().texture = PhotoChange(info, 1);
-        photo2.GetComponent<RawImage>().texture = PhotoChange(info, 2);
-        photo3.GetComponent<RawImage>().texture = PhotoChange(info, 3);
-        photo4.GetComponent<RawImage>().texture = PhotoChange(info, 4);
+        tutTag = info;
+        text.GetComponent<TMP_Text>().text = File.ReadAllText(".\\Assets\\Scripts\\Text\\" + info + "Info.txt");
+        string path = ".\\Assets\\Scripts\\Photos\\" + info + ".png";
+        if (System.IO.File.Exists(path)) photoButton.gameObject.SetActive(true);
+        else photoButton.gameObject.SetActive(false);
+
+    }
+
+    public void ShowPhoto()
+    {
+        
+        photos.GetComponent<RawImage>().texture = PhotoChange(tutTag);
 
     }
 }

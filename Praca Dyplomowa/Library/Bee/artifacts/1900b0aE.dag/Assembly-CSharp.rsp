@@ -388,6 +388,7 @@
 "Assets/Scripts/NextScript.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
 "Assets/Scripts/SelectScript.cs"
+"Assets/Scripts/ShowPhoto.cs"
 "Assets/Scripts/TextChange.cs"
 "Assets/Scripts/TutorialScript.cs"
 -langversion:9.0
