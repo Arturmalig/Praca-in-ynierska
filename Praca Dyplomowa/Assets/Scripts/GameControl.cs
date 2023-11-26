@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameControl : MonoBehaviour
     public GameObject panelEnd; // panel koñcowy
     public GameObject panelClick; // panel klikniêcia na obiekt
     public GameObject textEnd; // tekst wypisywany na panelu koñcowym
+    public Button next; // guzik do zmiany poziomu na koñcu mapy (tylko na 1 i 2 apartamencie)
 
     public int lngth = 0;
     public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
@@ -61,6 +63,8 @@ public class GameControl : MonoBehaviour
                 Time.timeScale = 0;
                 isPaused = true;
                 panelEnd.SetActive(true);
+                if (SceneManager.GetActiveScene().name == "First_apartment" || SceneManager.GetActiveScene().name == "Second_apartment") next.gameObject.SetActive(true);
+                else next.gameObject.SetActive(false);
 
             }
         }
