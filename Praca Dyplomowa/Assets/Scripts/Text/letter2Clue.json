@@ -4,8 +4,8 @@
   "option2": "You hide the letter and do not secure it.",
   "option3": "You take the letter and read it, then you look for fingerprints.",
   "option4": "You walk away and do nothing.",
-  "value1": 0,
-  "value2": 1,
+  "value1": 1,
+  "value2": 0,
   "value3": 0,
   "value4": 2
 
