@@ -6,6 +6,7 @@ using System.IO;
 using System.Globalization;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 public class TextChange : MonoBehaviour
 {
@@ -21,12 +22,10 @@ public class TextChange : MonoBehaviour
 
     public Texture2D PhotoChange(string data)
     {
-        string path = ".\\Assets\\Scripts\\Photos\\" + data + ".png";
-        if (System.IO.File.Exists(path))
+        if (Resources.Load<Texture2D>("Photos/" + data) != null)
         {
-            fileData = File.ReadAllBytes(path);
             Texture2D tex = new Texture2D(300, 370);
-            tex.LoadImage(fileData);
+            tex = Resources.Load<Texture2D>("Photos/" + data);
             photos.SetActive(true);
             return tex;
         }
@@ -36,9 +35,9 @@ public class TextChange : MonoBehaviour
     public void TextChanging(string info)
     {
         tutTag = info;
-        text.GetComponent<TMP_Text>().text = File.ReadAllText(".\\Assets\\Scripts\\Text\\" + info + "Info.txt");
-        string path = ".\\Assets\\Scripts\\Photos\\" + info + ".png";
-        if (System.IO.File.Exists(path)) photoButton.gameObject.SetActive(true);
+        TextAsset txt = Resources.Load<TextAsset>("Text/" + info + "Info");
+        text.GetComponent<TMP_Text>().text = txt.text;
+        if (Resources.Load<Texture2D>("Photos/" + info) != null) photoButton.gameObject.SetActive(true);
         else photoButton.gameObject.SetActive(false);
 
     }

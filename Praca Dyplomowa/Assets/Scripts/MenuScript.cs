@@ -12,9 +12,8 @@ public class MenuScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Wychodzenie");
 
-        //Application.Quit();
+        Application.Quit();
     }
 
 }

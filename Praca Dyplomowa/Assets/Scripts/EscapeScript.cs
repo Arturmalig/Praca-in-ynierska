@@ -15,6 +15,7 @@ public class EscapeScript : MonoBehaviour
     {
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         gc.isPaused = false;
     }
 
@@ -25,8 +26,7 @@ public class EscapeScript : MonoBehaviour
 
     public void Quit()
     {
-        Debug.Log("Wychodzenie");
 
-        //Application.Quit();
+        Application.Quit();
     }
 }

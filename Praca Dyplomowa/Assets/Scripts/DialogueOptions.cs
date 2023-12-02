@@ -24,8 +24,9 @@ public class DialogueOptions : MonoBehaviour
     public ItemData LoadJson(string tag)
     {
         ItemData wynik;
-        string json = File.ReadAllText(".\\Assets\\Scripts\\Text\\" + tag + "Clue.json");
-        wynik = JsonUtility.FromJson<ItemData>(json);
+        TextAsset jsonFile = Resources.Load<TextAsset>("Text/" + tag + "Clue");
+        wynik = JsonUtility.FromJson<ItemData>(jsonFile.text);
+        Debug.Log(wynik);
         return wynik;
     }
     public void DialReturn(GameObject tekst, Button op1, Button op2, Button op3, Button op4, string tag) // funkcja zwracajaca odpowiednie napisy na buttonach w zaleznosci od nacisnietego przedmiotu
@@ -44,8 +45,6 @@ public class DialogueOptions : MonoBehaviour
 
     public void DialogueClosing(GameObject Panel) // Zamykanie okna dialogowego - zabieg estetyczny, zeby w ObjectClickEvent nie powtarzac 4 razy tych samych linijek
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         Panel.SetActive(false);
         control.isPaused = false;
         Time.timeScale = 1;

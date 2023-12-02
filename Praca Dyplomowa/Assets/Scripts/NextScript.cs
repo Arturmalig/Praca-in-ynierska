@@ -13,12 +13,11 @@ public class NextScript : MonoBehaviour
     public GameObject tekst;
     private void Start()
     {
-        string mapName= SceneManager.GetActiveScene().name;
-        string fileName = ".\\Assets\\Scripts\\Text\\"+ mapName + "Text.txt";
-        string data = File.ReadAllText(fileName);
-        
         gc = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
-        tekst.GetComponent<TMP_Text>().text = data;
+        string mapName= SceneManager.GetActiveScene().name;
+
+        TextAsset txt = Resources.Load<TextAsset>("Text/" + mapName + "Text");
+        tekst.GetComponent<TMP_Text>().text = txt.text;
     }
 
 
@@ -27,7 +26,6 @@ public class NextScript : MonoBehaviour
     {
         gc.isPaused = false;
         Time.timeScale = 1;
-        Cursor.lockState = CursorLockMode.Locked; // odblokowujemy poruszanie kursorem po ekranie
         counter.SetActive(true);
 
     }
