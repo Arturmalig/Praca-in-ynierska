@@ -26,7 +26,6 @@ public class ObjectClickEvent : DialogueOptions
     private void Update()
     {
         
-        Cursor.visible = true;
 
         if(!control.isPaused)
         {
@@ -44,8 +43,6 @@ public class ObjectClickEvent : DialogueOptions
                         objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
                         item = gameObject;
                         DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
-                        Cursor.visible = true; // wlaczamy widocznosc kursora
-                        Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
                         Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
                     }
                 }

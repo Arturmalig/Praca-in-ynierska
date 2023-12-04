@@ -1385,6 +1385,8 @@ GameObject:
   - component: {fileID: 380254198}
   - component: {fileID: 380254197}
   - component: {fileID: 380254196}
+  - component: {fileID: 380254200}
+  - component: {fileID: 380254201}
   m_Layer: 0
   m_Name: Blood
   m_TagString: blood3
@@ -1499,6 +1501,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380254194}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &380254200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380254194}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &380254201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380254194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &524421248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +2890,8 @@ GameObject:
   - component: {fileID: 977838962}
   - component: {fileID: 977838961}
   - component: {fileID: 977838965}
+  - component: {fileID: 977838966}
+  - component: {fileID: 977838967}
   m_Layer: 0
   m_Name: Knife
   m_TagString: cup
@@ -2972,6 +3006,36 @@ MonoBehaviour:
   Option3: {fileID: 539910416}
   Option4: {fileID: 298814792}
   cam: {fileID: 963194227}
+--- !u!114 &977838966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977838959}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &977838967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977838959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1007681801
 GameObject:
   m_ObjectHideFlags: 0

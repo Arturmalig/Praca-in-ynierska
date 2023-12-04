@@ -45,6 +45,7 @@ public class GameControl : MonoBehaviour
         }
         else
         {
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked; // odblokowujemy poruszanie kursorem po ekranie
             if (Input.GetKeyDown(KeyCode.Escape))
             {

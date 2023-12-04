@@ -372,6 +372,7 @@
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow.cs"
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs"
 "Assets/Clock/Scripts/Clock.cs"
+"Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/RunemarkStudio/DarkFantasyKit [Free]/Readme/Parts/Readme.cs"
 "Assets/Scripts/Camera1.cs"
 "Assets/Scripts/ClueOptions.cs"
@@ -380,6 +381,7 @@
 "Assets/Scripts/EndMenuScript.cs"
 "Assets/Scripts/EscapeScript.cs"
 "Assets/Scripts/GameControl.cs"
+"Assets/Scripts/Highlight.cs"
 "Assets/Scripts/ItemData.cs"
 "Assets/Scripts/MenuScript.cs"
 "Assets/Scripts/MeshCombiner.cs"
@@ -388,7 +390,6 @@
 "Assets/Scripts/NextScript.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
 "Assets/Scripts/SelectScript.cs"
-"Assets/Scripts/ShowPhoto.cs"
 "Assets/Scripts/TextChange.cs"
 "Assets/Scripts/TutorialScript.cs"
 -langversion:9.0

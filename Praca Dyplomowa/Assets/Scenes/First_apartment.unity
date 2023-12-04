@@ -2814,6 +2814,8 @@ GameObject:
   - component: {fileID: 387599121}
   - component: {fileID: 387599122}
   - component: {fileID: 387599123}
+  - component: {fileID: 387599125}
+  - component: {fileID: 387599124}
   m_Layer: 0
   m_Name: krew
   m_TagString: blood
@@ -2901,6 +2903,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.83, z: 1}
   m_Center: {x: -8.45, y: -0.48, z: 2.88}
+--- !u!114 &387599124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387599119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &387599125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387599119}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &397510094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6269,6 +6301,8 @@ GameObject:
   - component: {fileID: 720610534}
   - component: {fileID: 720610536}
   - component: {fileID: 720610535}
+  - component: {fileID: 720610538}
+  - component: {fileID: 720610537}
   m_Layer: 0
   m_Name: zwloki
   m_TagString: body
@@ -6334,6 +6368,36 @@ MonoBehaviour:
   Option3: {fileID: 266906079}
   Option4: {fileID: 1189343066}
   cam: {fileID: 1905790229}
+--- !u!114 &720610537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720610533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &720610538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720610533}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &721818403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6468,7 +6532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721818404}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 899a71306a1974c4c887d977bab22ef8, type: 3}
   m_Name: 
@@ -13140,6 +13204,8 @@ GameObject:
   - component: {fileID: 1468257265}
   - component: {fileID: 1468257266}
   - component: {fileID: 1468257267}
+  - component: {fileID: 1468257269}
+  - component: {fileID: 1468257268}
   m_Layer: 0
   m_Name: "m\u0142otek"
   m_TagString: hammer
@@ -13206,6 +13272,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: -0.67, y: 0.4, z: 0.4}
   m_Center: {x: -7.19, y: -0.33, z: 10.61}
+--- !u!114 &1468257268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468257264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1468257269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468257264}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &1481177028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18865,6 +18961,8 @@ GameObject:
   - component: {fileID: 2084824614}
   - component: {fileID: 2084824615}
   - component: {fileID: 2084824616}
+  - component: {fileID: 2084824618}
+  - component: {fileID: 2084824617}
   m_Layer: 0
   m_Name: szklanki
   m_TagString: cup
@@ -18952,6 +19050,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.21, y: 0.28, z: 0.2}
   m_Center: {x: -2.5, y: 0.18, z: 11.35}
+--- !u!114 &2084824617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084824612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2084824618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084824612}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2086402839
 GameObject:
   m_ObjectHideFlags: 0

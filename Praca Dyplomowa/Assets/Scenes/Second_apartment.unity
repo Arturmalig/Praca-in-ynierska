@@ -387,6 +387,8 @@ GameObject:
   - component: {fileID: 39242809}
   - component: {fileID: 39242811}
   - component: {fileID: 39242810}
+  - component: {fileID: 39242813}
+  - component: {fileID: 39242812}
   m_Layer: 0
   m_Name: leki
   m_TagString: medicine
@@ -453,6 +455,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &39242812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39242808}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &39242813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39242808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &45781193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5008556356809125375, guid: f01b8dde2f2266c4a9c87acaa4ed6003, type: 3}
@@ -4127,6 +4159,8 @@ GameObject:
   - component: {fileID: 365632701}
   - component: {fileID: 365632703}
   - component: {fileID: 365632702}
+  - component: {fileID: 365632705}
+  - component: {fileID: 365632704}
   m_Layer: 0
   m_Name: dokumenty
   m_TagString: documents
@@ -4193,6 +4227,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &365632704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365632700}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &365632705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365632700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &375835201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3108454442468392478, guid: 3f867dd7956e96f4a90edce652fc7512, type: 3}
@@ -4502,6 +4566,8 @@ GameObject:
   - component: {fileID: 393573077}
   - component: {fileID: 393573079}
   - component: {fileID: 393573078}
+  - component: {fileID: 393573081}
+  - component: {fileID: 393573080}
   m_Layer: 0
   m_Name: noz
   m_TagString: knife
@@ -4567,6 +4633,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &393573080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393573076}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &393573081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393573076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &395877328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 968292777417071141, guid: 56a93cd127ed0184982c13ec0a61cfa5, type: 3}
@@ -6994,6 +7090,8 @@ GameObject:
   - component: {fileID: 603344287}
   - component: {fileID: 603344289}
   - component: {fileID: 603344288}
+  - component: {fileID: 603344291}
+  - component: {fileID: 603344290}
   m_Layer: 0
   m_Name: krew
   m_TagString: blood2
@@ -7059,6 +7157,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &603344290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603344286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &603344291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603344286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &606313167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7680,6 +7808,8 @@ GameObject:
   - component: {fileID: 650111553}
   - component: {fileID: 650111555}
   - component: {fileID: 650111554}
+  - component: {fileID: 650111557}
+  - component: {fileID: 650111556}
   m_Layer: 0
   m_Name: list
   m_TagString: letter
@@ -7745,6 +7875,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &650111556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650111552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &650111557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650111552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &654121445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14977,6 +15137,8 @@ GameObject:
   - component: {fileID: 1312909201}
   - component: {fileID: 1312909203}
   - component: {fileID: 1312909202}
+  - component: {fileID: 1312909205}
+  - component: {fileID: 1312909204}
   m_Layer: 0
   m_Name: zwloki
   m_TagString: body2
@@ -15042,6 +15204,36 @@ MonoBehaviour:
   Option3: {fileID: 1733308952}
   Option4: {fileID: 1004367880}
   cam: {fileID: 1864845895}
+--- !u!114 &1312909204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312909200}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1312909205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312909200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1313273138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1017606091530846216, guid: c5be39b879c83f54d9bbfebe68c809be, type: 3}
@@ -17129,6 +17321,8 @@ GameObject:
   - component: {fileID: 1544372420}
   - component: {fileID: 1544372422}
   - component: {fileID: 1544372421}
+  - component: {fileID: 1544372424}
+  - component: {fileID: 1544372423}
   m_Layer: 0
   m_Name: balagan
   m_TagString: destroy
@@ -17197,6 +17391,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.18, y: 1, z: 1}
   m_Center: {x: 5.12, y: 0, z: -20.87}
+--- !u!114 &1544372423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544372419}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 0, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1544372424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544372419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84bcd245c09c226468358da3571c414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1545659524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5008556356809125375, guid: f01b8dde2f2266c4a9c87acaa4ed6003, type: 3}
