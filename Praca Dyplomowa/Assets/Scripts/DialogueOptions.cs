@@ -17,8 +17,6 @@ public class DialogueOptions : MonoBehaviour
     public void Start()
     {
         control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
-        control.textEnd.GetComponent<TMP_Text>().richText = true;
-        control.textEnd.GetComponent<TMP_Text>().text = "";
     }
 
     public ItemData LoadJson(string tag)
@@ -72,14 +70,12 @@ public class DialogueOptions : MonoBehaviour
             
             item.SetActive(false);
             gc.allVal++;
-            control.textEnd.GetComponent<TMP_Text>().text = control.textEnd.GetComponent<TMP_Text>().text + "<color=red>" + tagClean + " was incorrectly secured. </color> \n ";
         }
         if (tab[choice] == 1)
         {
             gc.value++; 
             item.SetActive(false);
             gc.allVal++;
-            control.textEnd.GetComponent<TMP_Text>().text = control.textEnd.GetComponent<TMP_Text>().text + "<color=green>" + tagClean + " was correctly secured. </color> \n";
         }
 
     }

@@ -66,6 +66,20 @@ public class GameControl : MonoBehaviour
                 panelEnd.SetActive(true);
                 if (SceneManager.GetActiveScene().name == "First_apartment" || SceneManager.GetActiveScene().name == "Second_apartment") next.gameObject.SetActive(true);
                 else next.gameObject.SetActive(false);
+                TextAsset file = Resources.Load<TextAsset>("Text/" + SceneManager.GetActiveScene().name + "End");
+                ScoreString txt = JsonUtility.FromJson<ScoreString>(file.text);
+                if (value==allVal)
+                {
+                    Debug.Log(value + "\n" + allVal);
+                    textEnd.GetComponent<TMP_Text>().color = Color.black;
+                    textEnd.GetComponent<TMP_Text>().text = txt.good + "\n<color=green>Correctly collected: " + (value * 100 / allVal) + "%</color>";
+                }
+                else
+                {
+                    Debug.Log(value + "\n" + allVal);
+                    textEnd.GetComponent<TMP_Text>().color = Color.black;
+                    textEnd.GetComponent<TMP_Text>().text = txt.bad + "\n<color=red>Correctly collected: " + (value * 100 / allVal) + "%</color>";
+                }
 
             }
         }

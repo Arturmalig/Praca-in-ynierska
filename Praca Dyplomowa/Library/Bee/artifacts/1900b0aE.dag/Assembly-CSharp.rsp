@@ -389,6 +389,7 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/NextScript.cs"
 "Assets/Scripts/ObjectClickEvent.cs"
+"Assets/Scripts/ScoreString.cs"
 "Assets/Scripts/SelectScript.cs"
 "Assets/Scripts/TextChange.cs"
 "Assets/Scripts/TutorialScript.cs"
