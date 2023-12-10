@@ -72,13 +72,13 @@ public class GameControl : MonoBehaviour
                 {
                     Debug.Log(value + "\n" + allVal);
                     textEnd.GetComponent<TMP_Text>().color = Color.black;
-                    textEnd.GetComponent<TMP_Text>().text = txt.good + "\n<color=green>Correctly collected: " + (value * 100 / allVal) + "%</color>";
+                    textEnd.GetComponent<TMP_Text>().text = "<b>Scene Raport \n</b>" + txt.good + "\n<color=green><b>Correctly collected: " + (value * 100 / allVal) + "%</b></color>";
                 }
                 else
                 {
                     Debug.Log(value + "\n" + allVal);
                     textEnd.GetComponent<TMP_Text>().color = Color.black;
-                    textEnd.GetComponent<TMP_Text>().text = txt.bad + "\n<color=red>Correctly collected: " + (value * 100 / allVal) + "%</color>";
+                    textEnd.GetComponent<TMP_Text>().text = "<b>Scene Raport \n</b>" + txt.bad + "\n<color=red><b>Correctly collected: " + (value * 100 / allVal) + "%</b></color>";
                 }
 
             }
