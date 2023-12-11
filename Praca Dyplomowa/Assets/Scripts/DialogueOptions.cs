@@ -13,10 +13,14 @@ public class DialogueOptions : MonoBehaviour
 
     public ItemData itemData;
     public GameControl control;
+    protected GameObject glovesPanel;
+    protected GameObject glovesTekst;
 
     public void Start()
     {
         control = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameControl>();
+        glovesPanel = GameObject.FindGameObjectWithTag("StartScreen");
+        glovesTekst = GameObject.FindGameObjectWithTag("StartText");
     }
 
     public ItemData LoadJson(string tag)

@@ -26,6 +26,8 @@ TagManager:
   - painting
   - window
   - body
+  - StartScreen
+  - StartText
   layers:
   - Default
   - TransparentFX

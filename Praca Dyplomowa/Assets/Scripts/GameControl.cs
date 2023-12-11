@@ -17,7 +17,7 @@ public class GameControl : MonoBehaviour
     public GameObject panelClick; // panel klikniêcia na obiekt
     public GameObject textEnd; // tekst wypisywany na panelu koñcowym
     public Button next; // guzik do zmiany poziomu na koñcu mapy (tylko na 1 i 2 apartamencie)
-
+    public bool glovesEquiped = false;
     public int lngth = 0;
     public int allVal = 0;// Ilosc wszystkich poszlak - zle i dobrze zebranych
 

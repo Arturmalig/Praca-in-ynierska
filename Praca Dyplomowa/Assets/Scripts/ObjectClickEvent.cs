@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +24,7 @@ public class ObjectClickEvent : DialogueOptions
     public Camera cam;
 
 
+
     private void Update()
     {
         
@@ -36,7 +38,7 @@ public class ObjectClickEvent : DialogueOptions
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, maxClickDistance)) // sprawdzamy czy w dystansie 10 jednostek udalo nam sie w cos kliknac
                 {
-                    if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0)) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
+                    if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0) && control.glovesEquiped == true) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
                     {
                         control.isPaused = true;
                         Time.timeScale = 0;
@@ -44,6 +46,15 @@ public class ObjectClickEvent : DialogueOptions
                         item = gameObject;
                         DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
                         Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
+                    }
+                    else if(hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0) && control.glovesEquiped == false)
+                    {
+                        control.isPaused = true;
+                        Time.timeScale = 0;
+                        glovesPanel.SetActive(true);
+                        glovesTekst.GetComponent<TMP_Text>().text = "It is too dangerous to touch the clues without first putting on gloves.";
+
+
                     }
                 }
             }

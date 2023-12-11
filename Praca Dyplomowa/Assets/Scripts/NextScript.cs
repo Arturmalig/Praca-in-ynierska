@@ -22,11 +22,18 @@ public class NextScript : MonoBehaviour
 
 
     // Start is called before the first frame update
-    public void NextClick()
+    public void WearGlovesClick()
     {
         gc.isPaused = false;
         Time.timeScale = 1;
         counter.SetActive(true);
-
+        gc.glovesEquiped = true;
+    }
+    public void DontWearGlovesClick()
+    {
+        gc.isPaused = false;
+        Time.timeScale = 1;
+        counter.SetActive(true);
+        gc.glovesEquiped = false;
     }
 }
