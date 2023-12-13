@@ -53,7 +53,7 @@ public class DialogueOptions : MonoBehaviour
 
     }
 
-    public void AddingValue(int choice, GameControl gc, GameObject item, string tag) // zwiêkszanie wartoœci value bêdzie dla kilku opcji, na razie tylko testowe na dole, ¿eby by³o
+    public void AddingValue(int choice, GameObject item, string tag)
     {
         List<int> tab = new List<int>();
         itemData = LoadJson(tag);
@@ -61,25 +61,18 @@ public class DialogueOptions : MonoBehaviour
         tab.Add(itemData.value2);
         tab.Add(itemData.value3);
         tab.Add(itemData.value4);
-        string tagClean = "";
-        for (int i = 0; i< tag.Length; i++)
-        {
 
-            if (tag[i] >= '0' && tag[i] <= '9') continue;
-            else if (tagClean == "") tagClean =  tagClean + char.ToUpper(tag[i]);
-            else tagClean = tagClean + tag[i];
-        }
-        if (tab[choice] == 0)
+        if (tab[choice] == 0) //wartoœæ jest równa 0 - z³a odpowiedŸ
         {
             
             item.SetActive(false);
-            gc.allVal++;
+            control.allVal++;
         }
-        if (tab[choice] == 1)
+        if (tab[choice] == 1) //wartoœæ jest równa 1 - dobra odpowiedŸ
         {
-            gc.value++; 
+            control.value++; 
             item.SetActive(false);
-            gc.allVal++;
+            control.allVal++;
         }
 
     }

@@ -40,28 +40,25 @@ public class GameControl : MonoBehaviour
         
         if(isPaused)
         {
-            Cursor.visible = true; // wlaczamy widocznosc kursora
-            Cursor.lockState = CursorLockMode.None; // odblokowujemy poruszanie kursorem po ekranie
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None; 
+            Time.timeScale = 0;
         }
         else
         {
             Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked; // odblokowujemy poruszanie kursorem po ekranie
+            Cursor.lockState = CursorLockMode.Locked; 
+            Time.timeScale = 1;
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 panelClick.SetActive(false);
                 panelEnd.SetActive(false);
                 isPaused = true;
-                Time.timeScale = 0;
-
                 panel.SetActive(true);
-
-
             }
-            if (allVal >= lngth)// konczenie mapy
+            if (allVal >= lngth)
             {
                 Counter.SetActive(false);
-                Time.timeScale = 0;
                 isPaused = true;
                 panelEnd.SetActive(true);
                 if (SceneManager.GetActiveScene().name == "First_apartment" || SceneManager.GetActiveScene().name == "Second_apartment") next.gameObject.SetActive(true);

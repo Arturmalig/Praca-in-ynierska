@@ -36,26 +36,26 @@ public class ObjectClickEvent : DialogueOptions
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, maxClickDistance)) // sprawdzamy czy w dystansie 10 jednostek udalo nam sie w cos kliknac
+                if (Physics.Raycast(ray, out hit, maxClickDistance))
                 {
-                    if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0) && control.glovesEquiped == true) // Sprawdzamy czy nacisnelismy na obiekt lewym przyciskiem myszy
+                    if (hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0))
                     {
-                        control.isPaused = true;
-                        Time.timeScale = 0;
-                        objectTag = gameObject.tag; // Pobieramy tag obiektu, który zosta³ klikniêty
-                        item = gameObject;
-                        DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
-                        Panel.SetActive(true); // wlaczamy widocznosc canvas z opcjami wyboru
+                        if(control.glovesEquiped == true)
+                        {
+                            control.isPaused = true;
+                            objectTag = gameObject.tag;
+                            item = gameObject;
+                            DialReturn(Tekst, Option1, Option2, Option3, Option4, objectTag);
+                            Panel.SetActive(true);
+                        }
+                        else if (control.glovesEquiped == false)
+                        {
+                            control.isPaused = true;
+                            glovesPanel.SetActive(true);
+                            glovesTekst.GetComponent<TMP_Text>().text = "It is too dangerous to touch the clues without first putting on gloves.";
+                        }
                     }
-                    else if(hit.collider.gameObject == gameObject && Input.GetMouseButtonDown(0) && control.glovesEquiped == false)
-                    {
-                        control.isPaused = true;
-                        Time.timeScale = 0;
-                        glovesPanel.SetActive(true);
-                        glovesTekst.GetComponent<TMP_Text>().text = "It is too dangerous to touch the clues without first putting on gloves.";
-
-
-                    }
+                    
                 }
             }
         }
