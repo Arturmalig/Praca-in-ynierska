@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - Counter
     - EndMenuScript
     - EscapeScript
+    - FormsLink
     - GameControl
     - Highlight
     - MenuScript
@@ -114,6 +115,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SelectScript
     methodName: Scene2Play
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: FormsLink
+    methodName: ButtonClick
   - assembly: Assembly-CSharp
     fullTypeName: SelectScript
     methodName: Scene4Play
@@ -134,7 +144,7 @@ ScriptsOnlyBuild:
     methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: NextScript
-    methodName: NextClick
+    methodName: DontWearGlovesClick
   - assembly: Assembly-CSharp
     fullTypeName: ClueOptions
     methodName: ChoiceOption4
@@ -147,6 +157,12 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: NextScript
+    methodName: WearGlovesClick
   - assembly: Assembly-CSharp
     fullTypeName: ClueOptions
     methodName: ChoiceOption1
@@ -176,7 +192,10 @@ ScriptsOnlyBuild:
     methodName: Restart
   - assembly: Assembly-CSharp
     fullTypeName: NextScript
-    methodName: NextClick
+    methodName: WearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -198,6 +217,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ClueOptions
     methodName: ChoiceOption1
+  - assembly: Assembly-CSharp
+    fullTypeName: NextScript
+    methodName: DontWearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: EndMenuScript
     methodName: NextScenario
@@ -240,6 +268,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: EndMenuScript
     methodName: Restart
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: NextScript
+    methodName: DontWearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: EndMenuScript
     methodName: NextScenario
@@ -251,7 +288,10 @@ ScriptsOnlyBuild:
     methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: NextScript
-    methodName: NextClick
+    methodName: WearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: EndMenuScript
     methodName: Menu
@@ -295,6 +335,15 @@ ScriptsOnlyBuild:
     fullTypeName: EscapeScript
     methodName: Back
   - assembly: Assembly-CSharp
+    fullTypeName: NextScript
+    methodName: DontWearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
     fullTypeName: EndMenuScript
     methodName: NextScenario
   - assembly: UnityEngine.CoreModule
@@ -305,7 +354,10 @@ ScriptsOnlyBuild:
     methodName: ChoiceOption4
   - assembly: Assembly-CSharp
     fullTypeName: NextScript
-    methodName: NextClick
+    methodName: WearGlovesClick
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -592,9 +644,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7502}
     - Class: 114
-      Script: {instanceID: 30310}
+      Script: {instanceID: 29978}
     - Class: 114
-      Script: {instanceID: 30312}
+      Script: {instanceID: 29980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -678,6 +730,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6022}
     - Class: 114
       Script: {instanceID: 7470}
+    - Class: 114
+      Script: {instanceID: 7814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -891,9 +945,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7502}
     - Class: 114
-      Script: {instanceID: 30310}
+      Script: {instanceID: 29978}
     - Class: 114
-      Script: {instanceID: 30312}
+      Script: {instanceID: 29980}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1524,7 +1578,7 @@ ScriptsOnlyBuild:
     className: Quitgame
   - hash:
       serializedVersion: 2
-      Hash: 2bcdf295450c8398646fb2b0f863d6bd
+      Hash: 0424d2fc927d4f83c8d1448de5f72470
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameControl
@@ -1956,7 +2010,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseOverMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 094afdfa5701b46c73ad48137c1d1f37
+      Hash: 09a810b4deb638ddc87a990db7279610
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EscapeScript
@@ -1992,7 +2046,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 3a2588522b0d2dbbd724565cf61b1844
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuScript
@@ -2044,6 +2098,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 06bb6e74f15465275840fb4e9a66a4d6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FormsLink
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartMenu.unity
@@ -2052,4 +2112,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Third_apartment.unity
   - Assets/Scenes/Second_apartment.unity
   - Assets/Scenes/Tutorial.unity
-  playerPath: C:/Users/domin/OneDrive/Desktop/TestGame/My project.exe
+  playerPath: C:/Users/domin/OneDrive/Desktop/Game/My project.exe

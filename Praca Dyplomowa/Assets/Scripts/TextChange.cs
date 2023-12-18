@@ -24,7 +24,7 @@ public class TextChange : MonoBehaviour
     {
         if (Resources.Load<Texture2D>("Photos/" + data) != null)
         {
-            Texture2D tex = new Texture2D(300, 370);
+            Texture2D tex;
             tex = Resources.Load<Texture2D>("Photos/" + data);
             photos.SetActive(true);
             return tex;

@@ -335,6 +335,7 @@
 "Assets/Scripts/DialogueOptions.cs"
 "Assets/Scripts/EndMenuScript.cs"
 "Assets/Scripts/EscapeScript.cs"
+"Assets/Scripts/FormsLink.cs"
 "Assets/Scripts/GameControl.cs"
 "Assets/Scripts/Highlight.cs"
 "Assets/Scripts/ItemData.cs"
