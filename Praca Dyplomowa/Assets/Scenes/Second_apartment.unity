@@ -6610,7 +6610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 556529165}
   m_Layer: 0
-  m_Name: Apartment_04
+  m_Name: Apartment_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6624,8 +6624,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556529164}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6633,7 +6633,7 @@ Transform:
   - {fileID: 1512395828}
   - {fileID: 1446367487}
   - {fileID: 981119520}
-  m_Father: {fileID: 782904912}
+  m_Father: {fileID: 1681585669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &558553029
 PrefabInstance:
@@ -6815,6 +6815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gc: {fileID: 0}
+  open: C:/Users/artur/Praca-dyplomowa/Praca Dyplomowa/Assets/StreamingAssets/FirstTimeClosing.txt
 --- !u!114 &567902943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9019,38 +9020,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3108454442468392478, guid: 3f867dd7956e96f4a90edce652fc7512, type: 3}
   m_PrefabInstance: {fileID: 1840721462}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &782904911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 782904912}
-  m_Layer: 0
-  m_Name: 2nd Floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &782904912
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782904911}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 556529165}
-  m_Father: {fileID: 1681585669}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &791876758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17898,8 +17867,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.18, y: 1, z: 1}
-  m_Center: {x: 5.12, y: 0, z: -20.87}
+  m_Size: {x: 2.6, y: 1, z: 2}
+  m_Center: {x: 5.2, y: 0, z: -20.76}
 --- !u!114 &1544372423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18600,7 +18569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579230206}
   m_Layer: 0
-  m_Name: Structure_03
+  m_Name: Structure_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19850,7 +19819,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 782904912}
+  - {fileID: 556529165}
   m_Father: {fileID: 1579230206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1691221482
