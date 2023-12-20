@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3ae9cba22e5244d86ce4ae57df9ed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  open: C:/github/Praca-in-ynierska/Praca Dyplomowa/Assets/StreamingAssets/FirstTimeClosing.txt
+  path: 
 --- !u!1 &108278398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene1: {fileID: 1589690090}
   scene2: {fileID: 58317238}
-  open: C:/github/Praca-in-ynierska/Praca Dyplomowa/Assets/StreamingAssets/FirstTimeOpening.txt
+  path: 
 --- !u!1 &1596197467
 GameObject:
   m_ObjectHideFlags: 0
