@@ -30,14 +30,16 @@ public class TextChange : MonoBehaviour
             return tex;
         }
         else return null;
-
     }
     public void TextChanging(string info)
     {
         tutTag = info;
         TextAsset txt = Resources.Load<TextAsset>("Text/" + info + "Info");
         text.GetComponent<TMP_Text>().text = txt.text;
-        if (Resources.Load<Texture2D>("Photos/" + info) != null) photoButton.gameObject.SetActive(true);
+        if (Resources.Load<Texture2D>("Photos/" + info) != null)
+        {
+            photoButton.gameObject.SetActive(true);
+        }
         else photoButton.gameObject.SetActive(false);
 
     }
