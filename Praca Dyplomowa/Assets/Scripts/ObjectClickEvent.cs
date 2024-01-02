@@ -34,6 +34,7 @@ public class ObjectClickEvent : DialogueOptions
 
             if (Input.GetMouseButtonDown(0))
             {
+                Error;
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, maxClickDistance))

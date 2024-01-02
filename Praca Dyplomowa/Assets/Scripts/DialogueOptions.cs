@@ -61,14 +61,14 @@ public class DialogueOptions : MonoBehaviour
         tab.Add(itemData.value2);
         tab.Add(itemData.value3);
         tab.Add(itemData.value4);
-
-        if (tab[choice] == 0) //wartoœæ jest równa 0 - z³a odpowiedŸ
+        //wartoœæ 0 - z³a odpowiedŸ, wartoœæ 1 - dobra odpowiedŸ, wartoœæ 2 - odejœcie od poszlaki 
+        if (tab[choice] == 0)
         {
             
             item.SetActive(false);
             control.allVal++;
         }
-        if (tab[choice] == 1) //wartoœæ jest równa 1 - dobra odpowiedŸ
+        if (tab[choice] == 1)
         {
             control.value++; 
             item.SetActive(false);
